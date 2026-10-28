@@ -1,0 +1,5018 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="國土測繪圖資服務雲">
+<link rel="apple-touch-icon" href="/pics/icon-60x60-ios.png">
+<link rel="apple-touch-icon" href="/pics/icon-152x152-ios.png">
+<link rel="apple-touch-icon" href="/pics/icon-167x167-ios.png">
+<link rel="apple-touch-icon" href="/pics/icon-152x152-ios.png">
+<link rel="apple-touch-icon" href="/pics/icon-180x180-ios.png">
+<meta name="theme-color" content="#2F3BA2" />
+<meta name="description" content="國土測繪圖資服務雲">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9,IE=EmulateIE10,IE=EmulateIE11" /> 
+<meta content="all" name="國土測繪圖資服務雲 首頁">
+<meta name="DC.Subject" content="機關網站首頁">
+<meta name="Copyright" content="內政部國土測繪中心版權所有">
+<meta name="keywords" content="國土測繪,國土測繪圖資,網路地圖服務,國土測繪圖資服務雲,網路地圖,地圖服務">
+<meta property="og:site_name" content="國土測繪圖資服務雲" />
+<meta property="og:title" content="國土測繪圖資服務雲" />
+<link rel="manifest" href="manifest.json">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/T09/mobile/css/jquery-ui.min.css" />
+<link rel="stylesheet" href="/T09/mobile/css/bootstrap.css" />
+<link rel="stylesheet" href="/T09/mobile/css/ie10-viewport-bug-workaround.css" />
+<link rel="stylesheet" href="/T09/mobile/openlayers/css/ol.css" />
+<link rel="stylesheet" href="/T09/mobile/css/awesome-bootstrap-checkbox.css" />
+<link rel="stylesheet" href="/T09/mobile/css/jBox.css" />
+<link rel="stylesheet" href="/T09/mobile/css/jBox.Notice.css" />
+<link rel="stylesheet" href="/T09/mobile/css/font-awesome.min.css" />
+
+<script src="/T09/js/jquery.js"></script>
+<script src="/T09/mobile/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="/T09/mobile/js/jquery-ui.min.js"></script>
+<script src="/T09/mobile/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/T09/mobile/js/polyfill.min.js"></script>
+<script src="/T09/mobile/js/bootstrap.js"></script>
+<script src="/T09/mobile/js/ie10-viewport-bug-workaround.js"></script>
+
+
+<script src="/T09/mobile/js/proj4.js"  type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/T09/mobile/openlayers/css/measure.css" >
+<script src="/T09/mobile/openlayers/build/ol.js"></script>
+<script type="text/javascript" src="/T09/mobile/openlayers/build/MeasureClass.js"></script>
+<script src="/T09/mobile/openlayers/build/buttoncontrol.js"></script>
+
+
+<script type="text/javascript" src="/T09/mobile/js/animatedclusterlayer.js"></script>
+
+
+
+<script src="/T09/mobile/js/lodash.js"></script>
+<script src="/T09/mobile/js/jBox.min.js"></script>
+<script src="/T09/mobile/js/jBox.Notice.min.js"></script>
+<script src="/T09/mobile/js/jquery.jsonp.js"></script>
+<script src="/T09/mobile/js/coord.js"></script>
+<script src="/T09/mobile/js/cluster_style.js"></script>
+
+
+
+<link rel="stylesheet" href="/T09/mobile/css/qt-main.css?v=1787705095542" />
+<script src="/T09/mobile/js/qt/qt.js?v=1787705095542"></script>
+<script src="/T09/mobile/js/qt/qt-util.js?v=1787705095542"></script>
+<script src="/T09/mobile/js/qt/qt-ajax.js?v=1787705095542"></script>
+<script src="/T09/mobile/js/qt/qt-map.js?v=1787705095542"></script>
+<script src="/T09/mobile/js/qt_util.js?v=1787705095542"></script>
+<script src="/T09/mobile/js/qt_ajax.js?v=1787705095542"></script>
+<script src="/T09/mobile/js/qt_view.js?v=1787705095542"></script>
+<script src="/T09/mobile/js/qt_map.js?v=1787705095542"></script>
+<script src="/T09/mobile/js/qt_vttile.js?v=1787705095542"></script>
+
+<script src="/T09/mobile/js/qt_indexdDB.js?v=1787705095542"></script>
+
+
+
+<script src="../../js/map_layer.js?v=1787705095542"></script>
+
+
+<script src="../../js/vecTile_layer.js?v=1787705095542"></script>
+<script src="../../js/link_layer.js?v=1787705095542"></script>
+
+<link rel="stylesheet" href="/T09/mobile/css/toolsbar_style.css?v=1787705095542" />
+
+<script src="/T09/mobile/js/jszip.min.js"></script>
+<script src="/T09/mobile/js/cropper.min.js"></script>
+
+
+<!-- 色表 -->
+<link href="/T09/css/syronex-colorpicker.css" rel="stylesheet" type="text/css" />
+<script src="/T09/js/syronex-colorpicker_qt.js"></script>
+<!-- 色表-->
+
+
+<script type="text/javascript" src="/T09/js/offmap/qt-paper-offmap.js?v=1787705095542"></script>
+
+<script src="/T09/mobile/js/cookie.js?v=1787705095542"></script>
+
+<link rel="stylesheet" href="/T09/mobile/css/spectrum.css" />
+<script src="/T09/js/spectrum.js"></script>
+
+
+
+<link rel="stylesheet" href="/T09/css/ChatBox_style.css" />
+
+<link rel="stylesheet" href="/T09/css/select2.min.css" />
+<script src="/T09/js/select2.min.js"></script>
+<script src="/T09/js/select2.zh-TW.js"></script>
+<script>
+document.querySelectorAll('a[target="_blank"]').forEach(function(link) {
+    link.setAttribute('rel', 'noopener noreferrer');
+});
+</script>
+
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<style>
+.offline {
+	-webkit-filter: grayscale(1);
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overscroll-behavior: none;
+}
+
+/* === 非 editable UI：不讓瀏覽器接手長按 / 選字 / callout / 高亮 === */
+.qt-no-callout,
+.qt-no-callout *,
+.ol-control,
+.ol-control *,
+.ol-overlaycontainer-stopevent,
+.ol-overlaycontainer-stopevent *,
+.footer-menut,
+.footer-menut *,
+.navbar,
+.navbar *,
+.dropdown-menu,
+.dropdown-menu *,
+.modal,
+.modal *,
+button,
+a,
+img {
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
+}
+
+/* === 搜尋 input：保留可輸入、可選字、可複製 === */
+/* [重點] 16px 用來降低 iPhone focus 自動放大機率 */
+.topMenu .form-group-bg #qt-topMenu-lucene,
+.topMenu .form-group-bg .ui-autocomplete-input,
+input,
+textarea,
+select,
+[contenteditable="true"],
+[contenteditable=""] {
+	-webkit-user-select: text !important;
+	user-select: text !important;
+	-webkit-touch-callout: default !important;
+	touch-action: manipulation;
+}
+
+/* topMenu 搜尋框字級固定，避免 iPhone focus zoom */
+.topMenu .form-group-bg #qt-topMenu-lucene,
+.topMenu .form-group-bg .ui-autocomplete-input {
+	font-size: 16px !important;
+}
+
+/* chat 文字允許選取複製 */
+.chat-text {
+	-webkit-user-select: text !important;
+	user-select: text !important;
+	-webkit-touch-callout: default !important;
+}
+
+/* 圖片不要被原生拖曳 */
+.qt-no-callout img,
+.ol-control img,
+.footer-menut img,
+img {
+	-webkit-user-drag: none;
+	user-drag: none;
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="map1">
+		<div id="map1-cursor"></div>
+	</div>
+	
+	<div id="map2">
+		<div id="map2-cursor"></div>
+	</div>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+<nav class="navbar navbar-default navbar-left topMenu">
+	<div class="container-fluid">
+
+		<div class="navbar-header">
+			<div id = "dropdown_menu_list" class="dropdown">
+				<button type="button" class="btn-link btn-open" data-toggle="dropdown"
+					title="開啟功能選單">
+					<i class="fa fa-bars xs_search_menu_ico" aria-hidden="true"></i>
+				</button>
+					<ul class="dropdown-menu" role="menu" 
+						aria-labelledby="dropdownMenu">
+						<li>
+							<a tabindex="-1" href="javascript: void(0);" class="js-qt-menu-fun" id="qt-menu-fun-1"  	data-id="1" data-title="查詢結果"> <img
+									src="./mobile/images/mainMenu/search_result.png" width="26" height="18" alt="" />查詢結果
+							</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="javascript: void(0);" class="js-qt-menu-fun" id="qt-menu-fun-2"  	data-id="2" data-title="瀏覽紀錄"> <img
+									src="./mobile/images/mainMenu/browsing_h.png" width="26" height="18" alt="" />瀏覽紀錄
+							</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="javascript: void(0);" class="js-qt-menu-fun" id="qt-menu-fun-3"  	data-id="3" data-title="圖層設定"> <img
+									src="./mobile/images/mainMenu/layer_settings.png" width="26" height="18" alt="" />圖層設定
+							</a>
+						</li>
+							
+						<li>
+							<a tabindex="-1" href="javascript: void(0);" class="js-qt-menu-fun" id="qt-menu-fun-4"  	data-id="4" data-title="路徑規劃"> <img
+									src="./mobile/images/mainMenu/route_plan.png" width="26" height="18" alt="" />路徑規劃
+							</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="javascript: void(0);" class="js-qt-menu-fun" id="qt-menu-fun-5"  	data-id="8" data-title="儲存坐標"> <img
+									src="./mobile/images/mainMenu/coord.png" width="26" height="18" alt="" />儲存坐標
+							</a>
+						</li>
+						<li>
+							<a tabindex="-1" href="javascript: void(0);" class="dropdown-toggle" id = "qt-cfg-pos"  data-title="定位查詢" data-toggle="dropdown"> <img
+									src="./mobile/images/mainMenu/location.png" width="26" height="18" alt="" />定位查詢 &nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-right"></i>
+							</a>
+								
+							
+								<ul id = "qt-cfg-pos_menu"  class="dropdown-menu" role="menu" style="margin-top: -377px; font-size: 1em;margin-left: 186px;"
+									aria-labelledby="dropdownMenu">
+							
+
+									<li>
+										<a tabindex="-1" href="javascript: void(0);" class="js-qt-menu-pos" id="qt-menu-pos-1"  	data-id="5" data-title="地籍查詢"> <img
+												src="./mobile/images/mainMenu/cadastral_s.png" width="26" height="18" alt="" />&nbsp;&nbsp;地籍查詢
+										</a>
+									</li>
+									<li>
+										<a tabindex="-1" href="javascript: void(0);" class="js-qt-menu-pos" id="qt-menu-pos-2"  	data-id="6" data-title="坐標查詢"> <img
+												src="./mobile/images/mainMenu/coord.png" width="26" height="18" alt="" />&nbsp;&nbsp;坐標查詢
+										</a>
+									</li>
+									<li>
+										<a tabindex="-1" href="javascript: void(0);" class="js-qt-menu-pos" id="qt-menu-pos-3"  	data-id="7" data-title="周邊查詢"> <img
+												src="./mobile/images/mainMenu/landmark.png" width="26" height="18" alt="" />&nbsp;&nbsp;周邊查詢
+										</a>
+									</li>
+							</ul>
+						</li>
+						<li class="divider"></li>
+						<div id="xs_dropdown" >
+						<!--  
+								<span class="headline">雙地圖視窗</span>
+								<div class="label_area">
+									<form role="form" style="margin-top: 1rem;">
+										<div class="radio radio-info">
+											<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-1" value="1">&nbsp;<label for="qt-cfg-2map-1">開啟鄰圖連續模式</label>
+										</div>
+										<div class="radio radio-info">
+											<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-2" value="2">&nbsp;<label for="qt-cfg-2map-2">開啟相同視景模式</label>
+										</div>
+										<div class="radio radio-info">
+											<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-off" value="off" checked>&nbsp;<label for="qt-cfg-2map-off">關閉</label>
+										</div>
+									</form>
+								</div>
+						-->
+								<span class="headline">圖磚類別</span>
+								<div class="label_area">
+									<form role="form" style="margin-top: 1rem;">
+										<div class="radio radio-info radio-inline">
+											<input type="radio" name="qt-cfg-layerType" id="qt-cfg-layerType-1" value="1" checked>&nbsp;<label for="qt-cfg-layerType-1">一般</label>
+										</div>
+										<div class="radio radio-info radio-inline" style="display: none;">
+											<input type="radio" name="qt-cfg-layerType" id="qt-cfg-layerType-2" value="2">&nbsp;<label for="qt-cfg-layerType-2">向量</label>
+										</div>
+										<div class="radio radio-info radio-inline">
+											<input type="radio" name="qt-cfg-layerType" id="qt-cfg-layerType-3" value="3">&nbsp;<label for="qt-cfg-layerType-3">高DPI</label>
+										</div>
+									</form>
+								</div>
+								<span class="headline">地號著色</span>
+								<div class="label_area">
+									<form role="form" style="margin-top: 1rem;">
+										<div id ="ColorSetByLand" >
+											<div  style="display: inline-block;  right: 41px;  margin-top: 1px;">
+											<span id="SelectColorByLand" style="display: none;" ></span>
+											<div id="EditorColorByLand" style="display: inline-block;"></div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<span class="headline">地圖旋轉檢視</span>
+								<div class="label_area">
+									<form role="form" style="margin-top: 1rem;">
+										<div class="radio radio-info radio-inline">
+											<input type="radio" name="qt-cfg-rotate" id="qt-cfg-rotate-true" value="true">&nbsp;<label for="qt-cfg-rotate-true" title="PC版裝置：按住Alt+Shift鍵，並按住滑鼠左鍵，移動滑鼠來進行旋轉檢視">啟用</label>
+										</div>
+										<div class="radio radio-info radio-inline">
+											<input type="radio" name="qt-cfg-rotate" id="qt-cfg-rotate-false" value="false" checked>&nbsp;<label for="qt-cfg-rotate-false">停用</label>
+										</div>
+									</form>
+								</div>
+								<span class="headline">坐標顯示順序</span>
+								<div class="label_area">
+									<form role="form" style="margin-top: 1rem;">
+										<div class="radio radio-info radio-inline">
+											<input type="radio" name="qt-cfg-lonlattype" id="qt-cfg-lonlattype-1" value="1" checked><label for="qt-cfg-lonlattype-1"  title="經緯(X,Y)" >經緯</label>
+										</div>
+										<div class="radio radio-info radio-inline">
+											<input type="radio" name="qt-cfg-lonlattype" id="qt-cfg-lonlattype-2" value="2"><label for="qt-cfg-lonlattype-2"  title="緯經(N,E)" >緯經</label>
+										</div>
+									</form>
+								</div>
+						</div>
+						<!--  
+						<li><a tabindex="-1" href="#"> 我的地圖</a></li>
+						<li class="divider"></li>
+						<li><a tabindex="-1" href="#"> 系統設定</a></li>
+						<li class = "divider" >
+						</li>
+						<li>
+							<a href="javascript: void(0);"  >我的地圖(需登入)</a>
+						</li>
+						<li class = "divider" >
+						</li>
+						<li>
+							<a href="javascript: void(0);"  >登入</a>
+						</li>
+							-->
+						<li class = "divider" >
+						</li>
+						<li >
+						<div id = "dropdown_menu_list2" class="dropdown">
+						</div>
+						 <a href="#" class="dropdown-toggle" id = "qt-cfg-order" data-toggle="dropdown">其它功能.....</a>
+							<ul id = "qt-cfg-order_menu"  class="dropdown-menu" role="menu" style="margin-top: -236px; font-size: 1em;margin-left: 186px;"
+								aria-labelledby="dropdownMenu">
+									<span class="headline">雙地圖視窗</span>
+								</li>
+										<div class="label_area">
+											<form role="form" style="margin-top: 1rem;margin-left: 1rem;">
+												<div class="radio radio-info">
+													<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-1" value="1">&nbsp;<label for="qt-cfg-2map-1">開啟鄰圖連續模式</label>
+												</div>
+												<div class="radio radio-info">
+													<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-2" value="2">&nbsp;<label for="qt-cfg-2map-2">開啟相同視景模式</label>
+												</div>
+												<div class="radio radio-info">
+													<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-off" value="off" checked>&nbsp;<label for="qt-cfg-2map-off">關閉</label>
+												</div>
+											</form>
+										</div>
+								<li class = "divider" >
+								</li>
+								<li>
+									<a href="javascript: void(0);"   class="js-qt-menu-fun" id="qt-menu-fun-10"  	data-id="10"  data-title="離線地圖申請" >離線地圖申請</a>
+								</li>
+								<li class = "divider" >
+								</li>
+								<li>
+									<a href="javascript: void(0);"  id="qt-menu-fun-2PC">前往PC版</a>
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<a tabindex="-1" href="javascript: void(0);" class="js-qt-menu-fun" id="qt-cfg-login" data-title="會員登入/註冊">會員登入/註冊</a>
+						</li>	
+												
+						
+					
+	<!--  				
+						
+						<li>
+								　&nbsp;&nbsp;&nbsp;&nbsp;雙地圖視窗
+						</li>
+								<div class="label_area">
+									<form role="form" style="margin-top: 1rem;margin-left: 1rem;">
+										<div class="radio radio-info">
+											<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-1" value="1">&nbsp;<label for="qt-cfg-2map-1">開啟鄰圖連續模式</label>
+										</div>
+										<div class="radio radio-info">
+											<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-2" value="2">&nbsp;<label for="qt-cfg-2map-2">開啟相同視景模式</label>
+										</div>
+										<div class="radio radio-info">
+											<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-off" value="off" checked>&nbsp;<label for="qt-cfg-2map-off">關閉</label>
+										</div>
+									</form>
+								</div>
+						<li>
+							<a href="javascript: void(0);"  id="qt-menu-fun-2PC">前往PC版</a>
+						</li>
+						<li>
+							<a href="javascript: void(0);" id="qt-menu-fun-2Home">
+								<div class="row qt-eqh">
+									<div class="col-xs-9">
+										返回首頁
+									</div>
+								</div>
+							</a>
+						</li>    
+-->	
+					</ul>
+				</div>
+
+			<div class="hidden-sm hidden-md hidden-lg">
+				<a href="javascript: void();" class="qt-menu-fun-2Home"> <img
+					src="./mobile/images/t09-logo.png" class="logo" alt="國土測繪圖資服務雲"
+					title="回首頁" />
+				</a>
+
+
+				<div class="form-group form-group-bg">
+					<input type="text" class="form-control" id="qt-topMenu-lucene-xs"
+						title="請輸入地標或地址" placeholder="請輸入地標或地址" style="width: 170px;"><label
+						for="qt-topMenu-lucene-xs" class="sr-only">請輸入地標或地址</label>
+
+					<button type="button"
+						class="btn-link btn-search js-qt-topMenu-search" title="查詢"
+						data-input="qt-topMenu-lucene-xs">
+						<i class="fa fa-search fa-fw" aria-hidden="true"></i>
+					</button>
+
+				</div>
+			</div>
+
+			<div class="hidden-xs">
+				<a href="javascript: void();" class="qt-menu-fun-2Home"> <img
+					src="./mobile/images/t09-logo.png" class="logo" alt="國土測繪圖資服務雲"
+					title="回首頁" />
+				</a> <a href="javascript: void();" class="js-qt-topMenu-open"> <img
+					src="./mobile/images/t09-title.png" class="logo-tilte"
+					alt="國土測繪圖資服務雲"  />
+				</a>
+
+
+
+
+				<div class="form-group form-group-bg">
+
+
+					<input type="text" class="form-control" id="qt-topMenu-lucene"
+						title="請輸入地標或地址" placeholder="請輸入地標或地址" style="width: 200px;"><label
+						for="qt-topMenu-lucene" class="sr-only">請輸入地標或地址</label>
+
+					<button type="button"
+						class="btn-link btn-search js-qt-topMenu-search" title="查詢"
+						data-input="qt-topMenu-lucene">
+						<i class="fa fa-search fa-fw" aria-hidden="true"></i>
+					</button>
+
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="collapse navbar-collapse"></div>
+	</div>
+</nav>
+
+<script>
+"use strict";
+$(function() {
+
+	
+	
+// 	initDatabase();
+		setTimeout(function () {
+			// 自動開啟坐標顯示設定
+				
+			indexDbPosShow();
+		}, 1700);
+		$('#EditorColorByLand').colorPicker({
+			defaultColor:0, // index of the default color
+			color: [ '#F70101','#FF7F27', '#FFF200', '#22B14C', '#007EE8', '#9600FF', '#8C8C8C'],
+			columns:7,     // number of columns 
+			click:function(c){
+				$('#SelectColorByLand').html(c);
+			}
+		});
+	
+
+	// 開啟主選單
+	$('#qt-cfg-pos').hover(function() {
+		setTimeout(function() {
+					$('#dropdown_menu_list').addClass('open');
+					$('#qt-cfg-pos_menu').addClass('open');
+		}, 500);
+		
+	});
+	$('#qt-cfg-order').hover(function() {
+		setTimeout(function() {
+					$('#dropdown_menu_list').addClass('open');
+					$('#qt-cfg-order_menu').addClass('open');
+		}, 500);
+		
+	});
+
+	$('#qt-cfg-login').on("click", function(event) {
+		window.location.assign("./MobileLogin.action");
+	});
+	$('#qt-cfg-logout').on("click", function(event) {
+		window.location.assign("./MobileLogout.action");
+	});
+
+	
+	$(".js-qt-topMenu-open").on("click", function(event) {
+		event.preventDefault();		
+		setTimeout(function() {
+					$('#dropdown_menu_list').addClass('open');
+		},500);
+//		qtMenuShow();
+	});
+	// 返回首頁
+	$(".qt-menu-fun-2Home").on("click", function(event) {
+		event.preventDefault();
+		qt.util.confirm("確定要返回首頁嗎？", {
+			"confirm" : function() {
+				qt.util.toUrl(home_titel+"/homePage.action?in_type=mobile");
+			}
+		});
+	});
+	// 查詢框自動完成
+	$("#qt-topMenu-lucene-xs, #qt-topMenu-lucene").autocomplete({
+		minLength : 2,
+		source : function(request, response) {
+			var center = map.getView().getCenter();
+			center = ol.proj.transform(center, toProjection, fromProjection);
+			var mydata = {
+					"word" : encodeURIComponent(request.term),
+					"mode" : "AutoComplete",
+					"count" : "10",
+					"feedback" : "XML",
+					"center" : center[0].toFixed(6) + "," + center[1].toFixed(6)
+			};
+			$.ajax({
+				type : "POST",
+				url : urlLuceneContentSearch,
+				dataType : "xml",
+				data : mydata,
+				error : function(jqXHR, textStatus, errorThrown) {
+					console.log("載入失敗：" + jqXHR.status + "；" + errorThrown);
+					$("#qt-topMenu-lucene-xs, #qt-topMenu-lucene").removeClass("ui-autocomplete-loading");
+				},
+				success : function(xml, textStatus, jqXHR) {
+					var items = [];
+					if(null == xml) {
+						console.log("載入失敗：xml is null");
+						response(items);
+						return;
+					}
+					var jqLucene = $(xml).find("lucene");
+					if(jqLucene.length <= 0) {
+						console.log("載入失敗：結果不符預期");
+						response(items);
+						return;
+					}
+					var tmp = "";
+					jqLucene.each(function() {
+						if(!qt.util.hasEmpty(tmp)) {
+							tmp = "," + tmp;
+						}
+						tmp = $(this).text() + tmp;
+					});
+					items = tmp.split(",");
+					response(items);
+				}
+			});
+		},
+		select : function(event, ui) {
+			luceneSearchAuto(ui.item.label, "qt-search-ctn");
+		}
+	});
+	
+	// 查詢
+	$(".js-qt-topMenu-search").on("click", function(event) {
+		event.preventDefault();
+		var input = $(this).attr("data-input");
+		if("" === $("#" + input).val().trim()) {
+			qt.util.toast("請輸入地標或地址");
+			$("#" + input).get(0).focus();
+			return;
+		}
+		luceneSearch($("#" + input).val().trim(), "qt-search-ctn");
+	});
+	$("#qt-menu-pos-3").on("click", function(event) {
+		var tmpcroodnowcenter = map.getView().getCenter();
+		var croodnowcenter = ol.proj.transform(tmpcroodnowcenter,toProjection,fromProjection);
+		$("#markpos_center").val(croodnowcenter[0].toFixed(6)+","+croodnowcenter[1].toFixed(6));
+		if("1" === getQtLonLatMapType()) {
+			$("#markpos_xy").text(croodnowcenter[0].toFixed(6)+","+croodnowcenter[1].toFixed(6));
+		}else{
+			$("#markpos_xy").text(croodnowcenter[1].toFixed(6)+","+croodnowcenter[0].toFixed(6));
+		}
+	});
+
+});
+</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+
+<div class="mainMenu-modal" id="qt-menu-modal"></div>
+
+
+<!--  -->
+	<div class="container-fluid fixed-bottom footer-menut" >
+		<div class="menu1">
+			<input type="checkbox" href="#" class="menu1-open" name="menu1-open"
+				id="menu1-open">
+			<label class="menu1-open-button"
+				for="menu1-open"> 
+			<span class="hamburger hamburger-1"></span>
+			<span class="hamburger hamburger-3"></span>
+			</label>
+			<a href="#" class="menu-item" id = "qt-ctrl-switchLayer"  data-toggle="tooltip"	data-placement="center" title="底圖">
+				<img src="./mobile/images/layerC-tool.svg" alt="底圖" width="50" class="nav-ico2" />
+			</a>
+			<a href="#" class="menu-item" id = "qt-ctrl-quickSwitch"  data-toggle="tooltip"	data-placement="center" title="開啟影像">
+				<img src="./mobile/images/imgC-tool.svg" alt="影像" width="50" class="nav-ico2" />
+			</a>
+			<a href="#" class="menu-item" id = "qt-distance" data-toggle="tooltip" title="開啟距離量測"
+				data-placement="top" title="距離量測">
+				<img src="./mobile/images/distanceC-tool.svg" alt="距離量測" width="50"	class="nav-ico2" />
+			</a>
+		</div>
+		<a href="#" type="button" id = "qt-ctrl-point" title="開啟點查詢" class="btn-border-map"> 
+			<img src="./mobile/images/clickC-tool.svg" alt="點查詢" width="38" />
+		</a>
+		<a href="#"	type="button" id = "qt-location-point" title="開啟GPS資訊" class="btn-border-map">
+			<img src="./mobile/images/gps-tool.svg" alt="GPS" width="28" alt="GPS" />
+		</a>
+		
+			
+	</div>
+
+
+
+<!-- 
+<nav class="mainMenu-wrap" id="qt-menu">
+	<div class="mainMenu">
+		<div class="container-fluid">
+			<div class="row qt-eqh qt-npd">
+				<div class="col-xs-10">
+					<img src="./mobile/images/t09-logo.png" class="logo" alt="國土測繪圖資服務雲" title="國土測繪圖資服務雲"/>
+					<img src="./mobile/images/t09-title.png" class="logo-tilte" alt="國土測繪圖資服務雲" title="國土測繪圖資服務雲"/>
+				</div>
+				<div class="col-xs-2 text-center">
+					<a href="javascript: void(0);" id="qt-menu-close" title="關閉功能選單">
+						<i class="fa fa-angle-double-left fa-fw btn-close" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<hr class="qt-hr"/>
+		
+		<div class="list-group">
+			<a href="javascript: void(0);" class="list-group-item js-qt-menu-fun" id="qt-menu-fun-1" 
+					data-id="1" data-title="查詢結果">
+				<div class="row qt-eqh">
+					<div class="col-xs-3">
+						<img src="./mobile/images/mainMenu/search_result.png" alt="查詢結果" style="width: 26px; height: 18px;"/>
+					</div>
+					<div class="col-xs-9">
+						查詢結果
+					</div>
+				</div>
+			</a>
+			<a href="javascript: void(0);" class="list-group-item js-qt-menu-fun" id="qt-menu-fun-2" 
+					data-id="2" data-title="瀏覽紀錄">
+				<div class="row qt-eqh">
+					<div class="col-xs-3">
+						<img src="./mobile/images/mainMenu/browsing_h.png" alt="瀏覽紀錄" style="width: 26px; height: 18px;"/>
+					</div>
+					<div class="col-xs-9">
+						瀏覽紀錄
+					</div>
+				</div>
+			</a>
+			<a href="javascript: void(0);" class="list-group-item js-qt-menu-fun" id="qt-menu-fun-3" 
+					data-id="3" data-title="圖層設定">
+				<div class="row qt-eqh">
+					<div class="col-xs-3">
+						<img src="./mobile/images/mainMenu/layer_settings.png" alt="圖層設定" style="width: 26px; height: 18px;"/>
+					</div>
+					<div class="col-xs-9">
+						圖層設定
+					</div>
+				</div>
+			</a>
+			<a href="javascript: void(0);" class="list-group-item js-qt-menu-fun" id="qt-menu-fun-4" 
+					data-id="4" data-title="路徑規劃">
+				<div class="row qt-eqh">
+					<div class="col-xs-3">
+						<img src="./mobile/images/mainMenu/route_plan.png" alt="路徑規劃" style="width: 26px; height: 18px;"/>
+					</div>
+					<div class="col-xs-9">
+						路徑規劃
+					</div>
+				</div>
+			</a>
+			
+			
+		</div>
+		
+		<hr class="qt-hr"/>
+		
+		
+		<div class="container-fluid panel-cfg">
+			<div class="row">
+				<div class="col-xs-12 cfg-title">雙地圖視窗</div>
+			</div>
+			<form role="form" style="margin-top: 1rem;">
+				<div class="radio radio-info">
+					<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-1" value="1">&nbsp;<label for="qt-cfg-2map-1">開啟鄰圖連續模式</label>
+				</div>
+				<div class="radio radio-info">
+					<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-2" value="2">&nbsp;<label for="qt-cfg-2map-2">開啟相同視景模式</label>
+				</div>
+				<div class="radio radio-info">
+					<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-off" value="off" checked>&nbsp;<label for="qt-cfg-2map-off">關閉</label>
+				</div>
+			</form>
+			
+			<div class="row">
+				<div class="col-xs-12 cfg-title">圖磚類別</div>
+			</div>
+			<form role="form" style="margin-top: 1rem;">
+				<div class="radio radio-info radio-inline">
+					<input type="radio" name="qt-cfg-layerType" id="qt-cfg-layerType-1" value="1" checked>&nbsp;<label for="qt-cfg-layerType-1">一般</label>
+				</div>
+				<div class="radio radio-info radio-inline" style="display: none;">
+					<input type="radio" name="qt-cfg-layerType" id="qt-cfg-layerType-2" value="2">&nbsp;<label for="qt-cfg-layerType-2">向量</label>
+				</div>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" name="qt-cfg-layerType" id="qt-cfg-layerType-3" value="3">&nbsp;<label for="qt-cfg-layerType-3">高DPI</label>
+				</div>
+			</form>
+			
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-xs-12 cfg-title">地圖旋轉檢視</div>
+			</div>
+			<form role="form" style="margin-top: 1rem;">
+				<div class="radio radio-info radio-inline">
+					<input type="radio" name="qt-cfg-rotate" id="qt-cfg-rotate-true" value="true">&nbsp;<label for="qt-cfg-rotate-true" title="PC版裝置：按住Alt+Shift鍵，並按住滑鼠左鍵，移動滑鼠來進行旋轉檢視">啟用</label>
+				</div>
+				<div class="radio radio-info radio-inline">
+					<input type="radio" name="qt-cfg-rotate" id="qt-cfg-rotate-false" value="false" checked>&nbsp;<label for="qt-cfg-rotate-false">停用</label>
+				</div>
+			</form>
+		</div>
+		
+		<hr class="qt-hr"/>
+		
+		<div class="list-group">
+			<a href="javascript: void(0);" class="list-group-item" id="qt-menu-fun-2PC">
+				<div class="row qt-eqh">
+					<div class="col-xs-9">
+						前往PC版
+					</div>
+				</div>
+			</a>
+			<a href="javascript: void(0);" class="list-group-item" id="qt-menu-fun-2Home">
+				<div class="row qt-eqh">
+					<div class="col-xs-9">
+						返回首頁
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</nav>
+ -->
+<script>
+"use strict";
+$(function() {
+	// 關閉主選單
+	$("#qt-menu-modal, #qt-menu-close").on("click", function(event) {
+		event.preventDefault();
+		qtMenuHide();
+	});
+	
+	// 主選單功能點選
+	$(".js-qt-menu-pos").on("click", function(event) {
+		event.preventDefault();
+		qtMenuPosAct.call(this, $(this).attr("data-id"), $(this).attr("data-title"));
+	});
+
+	// 主選單定位查詢功能點選
+	$(".js-qt-menu-fun").on("click", function(event) {
+		event.preventDefault();
+		qtMenuAct.call(this, $(this).attr("data-id"), $(this).attr("data-title"));
+	});
+	
+	// 雙地圖視窗
+	$('input[name="qt-cfg-2map"]').on("change", function() {
+		chg2Map();
+		
+		// 開啟圖層設定面板
+		if("off" === this.value) {
+			qtPanelHide();
+		} else {
+			$("#qt-menu-fun-3").trigger("click");
+		}
+	});
+	
+	// 地圖旋轉檢視
+	$('input[name="qt-cfg-rotate"]').on("change", function() {
+		if("true" === getQtCfgRotate()) {
+			enableRotate();
+			
+			// 調整網頁布局
+			chgViewSize();
+		} else {
+			unableRotate();
+		}
+	});
+	
+	// 圖磚類別
+	$('input[name="qt-cfg-layerType"]').on("change", function() {
+		chgVecMapView();
+	});
+	
+	// 坐標顯示順序
+	$('input[name="qt-cfg-lonlattype"]').on("change", function() {
+		
+			chgLonLatMapView();
+			indexDbInsMapSet(getQtLonLatMapType());
+		
+	});
+
+
+
+	// PC版
+	$("#qt-menu-fun-2PC").on("click", function(event) {
+		event.preventDefault();
+		qt.util.confirm("確定要前往PC版嗎？", {
+			"confirm" : function() {
+				var lonlat = ol.proj.transform([parseFloat(map.getView().getCenter()[0]),parseFloat(map.getView().getCenter()[1])], toProjection, fromProjection);
+				qt.util.toUrl("./mapshow.action?In_type=web&lat="+lonlat[1].toFixed(6)+'&lon='+lonlat[0].toFixed(6)+"&zoom="+parseInt(map.getView().getZoom()));
+			}
+		});
+	});
+	
+	// 返回首頁
+	$("#qt-menu-fun-2Home").on("click", function(event) {
+		event.preventDefault();
+			qt.util.confirm("確定要返回首頁嗎？", {
+			"confirm" : function() {
+				qt.util.toUrl(home_titel+"/homePage.action?in_type=mobile");
+			}
+		});
+		
+	});
+
+	//底圖切換
+	$("#qt-ctrl-switchLayer").on("click", function(event) {
+		event.preventDefault();
+		qtLayerShowSwitch();
+	});
+	// 開啟影像
+	$("#qt-ctrl-quickSwitch").on("click", function(event) {
+		event.preventDefault();
+		if("開啟影像" === $(this).attr("title")) {
+			chgBaseLayer("PHOTO2_B", "PHOTO2", "1");
+			$(this).attr("title","關閉影像");
+			$(this).css("background-image","linear-gradient(180deg,#777 0%,rgb(34 40 49) 100%)");
+		} else {
+			var qtCfgLayerType = getQtCfgLayerType();
+				if("1" === qtCfgLayerType) {
+					chgBaseLayer("EMAP_B", "EMAP", "1");
+				} else {
+					chgBaseLayer("EMAP99_B", "EMAP99", "1");
+				}
+			$(this).attr("title","開啟影像");
+			$(this).css("background-image","");
+		}
+	});
+
+	// 開啟點查詢
+	$("#qt-ctrl-point").on("click", function(event) {
+		event.preventDefault();
+		toggleControl('none');
+		if("開啟點查詢" === $(this).attr("title")) {
+			$(this).attr("title","關閉點查詢");
+			$("#qt-distance").attr("title","開啟距離量測");
+			$(this).css("background-image","linear-gradient(180deg,#777 0%,rgb(34 40 49) 100%)");
+		} else {
+			$(this).attr("title","開啟點查詢");
+			$(this).css("background-image","-webkit-linear-gradient(270deg,rgba(0,105,231,1.00) 0%,rgba(0,67,185,1.00) 100%)");
+			$(this).css("background-image","linear-gradient(180deg,rgba(0,105,231,1.00) 0%,rgba(0,67,185,1.00) 100%)");
+		}
+	});
+
+	// 開啟GPS資訊
+	$("#qt-location-point").on("click", function(event) {
+		event.preventDefault();
+		if("開啟GPS資訊" === $(this).attr("title")) {
+			setWatchPosition();
+			$(".qt-location-pointinfo").show();
+			$(this).attr("title","關閉GPS資訊");
+			$(this).css("background-image","linear-gradient(180deg,#777 0%,rgb(34 40 49) 100%)");
+		} else {
+			stopWatchPosition();
+			$(".qt-location-pointinfo").hide();
+			$(this).attr("title","開啟GPS資訊");
+			$(this).css("background-image","-webkit-linear-gradient(270deg,rgba(0,105,231,1.00) 0%,rgba(0,67,185,1.00) 100%)");
+			$(this).css("background-image","linear-gradient(180deg,rgba(0,105,231,1.00) 0%,rgba(0,67,185,1.00) 100%)");
+		}
+		
+	});
+
+		// 開啟距離量測
+	$("#qt-distance").on("click", function(event) {
+		event.preventDefault();
+		toggleControl('line');
+		if("開啟距離量測" === $(this).attr("title")) {
+			$(this).attr("title","關閉距離量測");
+			$("#qt-ctrl-point").attr("title","開啟點查詢");
+			$(this).css("background-image","linear-gradient(180deg,#777 0%,rgb(34 40 49) 100%)");
+		} else {
+			toggleControl('none');
+			$(this).attr("title","開啟距離量測");
+			$(this).css("background-image","");
+		}
+	});
+
+	// 口罩地圖
+	$("#qt-ctrl-quickMASKSwitch").on("click", function(event) {
+		event.preventDefault();
+		if("開啟口罩地圖" === $(this).attr("title")) {
+			$(this).attr("title","關閉口罩地圖");
+			$(this).css("background-image","linear-gradient(180deg,#777 0%,rgb(34 40 49) 100%)");
+			chgVetOverlay( MASK, 'MASK','1');
+		} else {
+			$(this).attr("title","開啟口罩地圖");
+			$(this).css("background-image","");
+			chgVetOverlay( MASK, 'MASK', '2')
+		}
+	});
+});
+</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<div class="sidePanel-wrap" id="qt-panel">
+	<div class="sidePanel">
+		<div class="container-fluid">
+			<div class="row qt-eqh qt-npd sidePanel-header">
+				<button class="text-sm btn-link btn" id="qt-panel-menu"
+					 href="#">
+					<i class="fa fa-bars box_menu_ico" aria-hidden="true"></i>
+				</button>
+				<div class="col-xs-2">
+					<a href="javascript:void(0);" class="btn-close" id="qt-panel-back"
+							aria-label="返回" title="返回"><span aria-hidden="true">&curvearrowleft;</span></a>
+				</div>
+				<div class="col-xs-8">
+					<h4 class="modal-title qt-ellipsis" id="qt-panel-title" title=""></h4>
+				</div>
+				<div class="col-xs-2 text-right">
+					<a href="javascript:void(0);" class="btn-close" id="qt-panel-close"
+							aria-label="關閉側邊面板" title="關閉側邊面板"><span aria-hidden="true">&times;</span></a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="sidePanel-ctn" id="qt-panel-ctn-1" data-id="1" data-pre="" data-next="" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<div class="qt-tabs" id="tabs-search">
+	<ul>
+		<li><a href="#tabsdt-search-win1" style="padding: .5em;">定位查詢結果</a></li>
+		<li><a href="#tabsdt-search-win2" style="padding: .5em;">地籍查詢結果</a></li>
+	</ul>
+
+	<div id="tabsdt-search-win1">
+		<div class="container-fluid panel-search" id="qt-search-ctn"></div>
+	</div>
+
+	<div id="tabsdt-search-win2">
+		<div class="panel-landdata" id="qt-landdata-ctn">
+			<table class="table-base stripe hover" style="width: 100%;">
+				<thead>
+					<tr>
+						<th class="base-title text-center">地號</th>
+					</tr>
+				</thead>
+				<tbody id="qt-land-ctn"></tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
+
+
+
+<script>
+"use strict";
+$(function() {
+	$("#tabs-search").tabs();
+	// 查詢結果點選
+	$("#qt-search-ctn").on("click", "a.js-qt-search-row", function(event) {
+		var cityCode = $(this).attr("data-cityCode");
+		var folderName = $(this).attr("data-folderName");
+		var key = $(this).attr("data-key");
+		var center = $(this).attr("data-center");
+		var type = $(this).attr("data-type");
+		var lon = $(this).attr("data-lon");
+		var lat = $(this).attr("data-lat");
+		var imgSrc = $(this).attr("data-imgSrc");
+		var name = $(this).attr("data-name");
+		qtSearchClick(cityCode, folderName, key, center, type, lon, lat, imgSrc, name);
+		if(qt.util.isXs()) {
+			qtPanelClose();
+		}
+	});
+});
+</script>
+
+		</div>
+		<div class="sidePanel-ctn" id="qt-panel-ctn-1-1" data-id="1-1" data-pre="1" data-next="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<div class="qt-tabs" id="tabs-land">
+</div>
+
+
+		</div>
+
+		
+		
+		<div class="sidePanel-ctn" id="qt-panel-ctn-2" data-id="2" data-pre="" data-next="" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<div class="panel-history">
+	<table class="table-base stripe hover" style="width: 100%;">
+		<thead>
+			<tr>
+				<th class="base-title text-center" style="width: 25%">查詢類別</th>
+				<th class="base-title text-center">內容</th>
+			</tr>
+		</thead>
+		<tbody id="qt-history-ctn"></tbody>
+	</table>
+</div>
+
+<script>
+"use strict";
+$(function() {
+	// 瀏覽紀錄點選
+	$("#qt-history-ctn").on("click", "tr.js-qt-history-row", function(event) {
+		event.preventDefault();
+		var pos = $(this).attr("data-pos");
+		var token = pos.split("#");
+		fly2Pos(posvectors, token[0], token[1], token[2], checkTypePng(token[0]), {
+			"label" : token[3],
+			"clean" : true,
+			"cookie" : false
+		});
+		if(qt.util.isXs()) {
+			qtPanelClose();
+		}
+	});
+});
+</script>
+
+		</div>
+		
+		
+		<div class="sidePanel-ctn" id="qt-panel-ctn-3" data-id="3" data-pre="" data-next="" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<div class="qt-tabs" id="tabs-layer">
+	<ul class="js-tabs-layer-off">
+		<li><a href="#tabsdt-layer-win1">第一視窗</a></li>
+		<li><a href="#tabsdt-layer-win2">第二視窗</a></li>
+	</ul>
+
+	
+	<div class="js-tabs-layer-off" id="tabsdt-layer-win1">
+		<div class="container-fluid panel-layer">
+			<div class="row" style="margin-top: .5em;">
+				<div class="col-xs-12 text-center">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default js-qt-layer-showType">
+							<img src="./mobile/images/layer/plus.png" style="width: 18px; height: 18px;"/>&nbsp;套疊圖層
+						</button>
+						<button type="button" class="btn btn-default js-qt-layer-clear">清除套疊圖層</button>
+					
+					
+						<button type="button" class="btn btn-warning" id="qt-layer-save"><i class="fa fa-floppy-o " aria-hidden="true"></i>&nbsp;儲存設定</button>
+					
+
+					</div>
+				</div>
+			</div>
+		
+			<div class="row" style="margin-top: .5em;">
+				<ul class="list-group" id="qt-layer-base-win1">
+					<li class="list-group-item qt-no-radius" data-mode="EMAP_B" data-name="EMAP">
+						<div class="row qt-eqh">
+							<div class="col-xs-4 text-center">
+								<div class="layer-txt-sub-green">基本圖層</div>
+							</div>
+							<div class="col-xs-8 layer-txt text-center">
+								臺灣通用電子地圖
+							</div>
+						</div>
+						<div class="row qt-eqh setting">
+							<div class="col-xs-4 text-center">
+								<button type="button" class="btn-layer-visible js-qt-layer-visible btn-layer-full">顯示</button>
+							</div>
+							<div class="col-xs-4 text-center">
+								<button type="button" class="btn-layer-visible js-qt-layer-dg btn-layer-full">透明度&nbsp;<span id="qt-layer-dg-EMAP_B-win1">0</span>%</button>
+							</div>
+							<div class="col-xs-4 text-center">
+								<button type="button" class="btn-layer-visible js-qt-layer-info btn-layer-full">說明</button>
+							</div>
+						</div> 
+					</li>
+				</ul>
+			</div>
+			
+			<div class="row">
+				<ul class="list-group overlay" id="qt-layer-overlay-win1"></ul>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="js-tabs-layer-off" id="tabsdt-layer-win2">
+		<div class="container-fluid panel-layer">
+			<div class="row" style="margin-top: .5em;">
+				<div class="col-xs-12 text-center">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default js-qt-layer-showType">
+							<img src="./mobile/images/layer/plus.png" style="width: 18px; height: 18px;"/>&nbsp;套疊圖層
+						</button>
+						<button type="button" class="btn btn-default js-qt-layer-clear">清除套疊圖層</button>
+					</div>
+				</div>
+			</div>
+		
+			<div class="row" style="margin-top: .5em;">
+				<ul class="list-group" id="qt-layer-base-win2">
+					<li class="list-group-item qt-no-radius" data-mode="EMAP_B" data-name="EMAP">
+					<div class="row qt-eqh"><div class="col-xs-4 text-center">
+						<div class="layer-txt-sub-green">基本圖層</div>
+					</div>
+					<div class="col-xs-8 text-center">臺灣通用電子地圖</div>
+					</div>
+					<div class="row qt-eqh setting" style="display:none">
+							<div class="col-xs-4 text-center"><button type="button" class="btn-layer-visible js-qt-layer-visible btn-layer-full">顯示</button></div><div class="col-xs-4 text-center"><button type="button" class="btn-layer-visible js-qt-layer-dg btn-layer-full">透明度<span id="qt-layer-dg-EMAP_B-win2">0</span>%</button></div><div class="col-xs-4 text-center"><button type="button" class="btn-layer-visible js-qt-layer-info btn-layer-full">說明</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="row">
+				<ul class="list-group overlay" id="qt-layer-overlay-win2"></ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="qt-layer-info-ctn" style="display: none;"></div>
+
+<script>
+"use strict";
+$(function() {
+	$(".setting").hide();
+
+	// 顯示圖層類別
+	$("#qt-layer-save").on("click", function(event) {
+
+		// 套用圖層
+		var baselayer = "";
+		var overlaylayer = "";
+		var layers = map.getLayers();
+		layers.forEach(function(obj) {
+			if("base" === obj.get("type")) {
+				if(obj.getVisible()){
+					baselayer = obj.get("name");
+				}
+			}
+			else{
+				if("overlay" === obj.get("type") || "vectortile" === obj.get("type")) {
+					if(obj.getVisible()){
+						if(overlaylayer!="")
+							overlaylayer+=",";
+						overlaylayer +=obj.get("name");
+					}
+				}
+			}
+		});
+
+		var ins =function() {
+			var Today=new Date();
+			var seqno =Today.getFullYear()+ (Today.getMonth()+1) +Today.getDate()+ Today.getHours()+ Today.getMinutes()+Today.getSeconds();
+			var mydata = {
+					"title": "圖層設定", //固定的
+					"type": "002",
+					"date": Today.getFullYear()+ "/" + (Today.getMonth()+1) + "/" + Today.getDate(), 
+					"baselayer": baselayer, 
+					"overlay": overlaylayer, 
+					"id": seqno
+			};
+			var savedata = {
+					"data": mydata,
+					"done" : function() {
+						qt.util.toast("新增完成");
+					},
+					"fail" : function() {
+						qt.util.toast("新增失敗");
+					}
+			};
+			indexDbIns("mapstable", savedata);		
+		};
+
+		indexDbLayerDel("mapstable", "002",ins);
+
+
+	});
+
+	// 顯示圖層類別
+	$(".js-qt-layer-showType").on("click", function(event) {
+		event.preventDefault();
+		qtLayerShowType();
+	});
+	
+	// 清除套疊圖層
+	$(".js-qt-layer-clear").on("click", function(event) {
+		event.preventDefault();
+		clrOverlay();
+	});
+	
+	// 顯示、不顯示
+	$("#tabs-layer").on("click", ".js-qt-layer-visible", function(event) {
+		event.preventDefault();
+		var jqLi = $(this).closest("li");
+		var mode = jqLi.attr("data-mode");
+		
+		var visible = null;
+		var nowMap = getQtLayerMap();
+		var layers = nowMap.getLayers();
+		layers.forEach(function(obj) {
+			if(mode === obj.get("name")) {
+				visible = obj.getVisible();
+				obj.setVisible(!visible);
+			}
+		});
+		if(null != visible) {
+			$(this).empty().html(visible ? "不顯示" : "顯示");
+		}
+	})
+	
+	// 增加透明
+	$("#tabs-layer").on("click", ".js-qt-layer-dg-up", function(event) {
+		event.preventDefault();
+		var jqLi = $(this).closest("li");
+		var mode = jqLi.attr("data-mode");
+		
+		var opacity = null;
+		var win = getQtLayerWin();
+		var nowMap = getQtLayerMap();
+		var layers = nowMap.getLayers();
+		layers.forEach(function(obj) {
+			if(mode === obj.get("name")) {
+				var t = obj.getOpacity() * 1000 / 10;
+				t -= 5;
+				if(0 >= t) {
+					t = 5;
+				}
+				obj.setOpacity(t / 100);
+				opacity = 100 - t;
+			}
+		});
+		if(null != opacity) {
+			$("#qt-layer-dg-" + mode + "-win" + win).empty().html(opacity + "");
+		}
+	});
+	
+	// 減少透明
+	$("#tabs-layer").on("click", ".js-qt-layer-dg-down", function(event) {
+		event.preventDefault();
+		var jqLi = $(this).closest("li");
+		var mode = jqLi.attr("data-mode");
+		
+		var opacity = null;
+		var win = getQtLayerWin();
+		var nowMap = getQtLayerMap();
+		var layers = nowMap.getLayers();
+		layers.forEach(function(obj) {
+			if(mode === obj.get("name")) {
+				opacity = obj.getOpacity();
+				var t = opacity * 1000 / 10;
+				t += 5;
+				if(100 < t) {
+					t = 100;
+				}
+				obj.setOpacity(t / 100);
+				opacity = 100 - t;
+			}
+		});
+		if(null != opacity) {
+			$("#qt-layer-dg-" + mode + "-win" + win).empty().html(opacity + "");
+		}
+	});
+	
+	// 透明度 fixed-value
+	$("#tabs-layer").on("click", ".js-qt-layer-dg", function(event) {
+		event.preventDefault();
+		var jqLi = $(this).closest("li");
+		var mode = jqLi.attr("data-mode");
+		var opacity = null;
+		var win = getQtLayerWin();
+		var nowMap = getQtLayerMap();
+		var layers = nowMap.getLayers();
+		layers.forEach(function(obj) {
+			if(mode === obj.get("name")) {
+				var t = obj.getOpacity() * 1000 / 10;
+				t -= 20;
+				if(0 >= t) {
+					t = 100;
+				}
+				obj.setOpacity(t / 100);
+				opacity = 100 - t;
+			}
+		});
+		if(null != opacity) {
+			$("#qt-layer-dg-" + mode + "-win" + win).empty().html(opacity + "");
+		}
+	});
+	
+// 	$(".showPaletteOnly").spectrum({
+// 	    showPaletteOnly: true,
+// 	    showPalette:true,
+// 	    hideAfterPaletteSelect:true,
+// 	    color: 'black',
+// 	    palette: [
+// [ 'black','#F70101','#FF7F27', '#FFF200'],[  '#22B14C','#007EE8', '#9600FF', '#8C8C8C'],
+// 	    ],
+// 	    change: function(color) {// #ff0000
+// 			paint_overlay(color.toRgb(),$(this).data("layer"));				      
+// 		}
+// 	});	
+	
+	// 圖資說明
+	$("#tabs-layer").on("click", ".js-qt-layer-info", function(event) {
+		event.preventDefault();
+		var jqLi = $(this).closest("li");
+		var name = jqLi.attr("data-name");
+		qtLayerShowInfo(name + "_doc");
+	});
+	
+	// 移除套用
+	$("#tabs-layer").on("click", ".js-qt-layer-trash", function(event) {
+		event.preventDefault();
+		var jqLi = $(this).closest("li");
+		var mode = jqLi.attr("data-mode");
+		var name = jqLi.attr("data-name");
+		
+		var target = null;
+		var win = getQtLayerWin();
+		var nowMap = getQtLayerMap();
+		var layers = nowMap.getLayers();
+		layers.forEach(function(obj) {
+			if(mode === obj.get("name")) {
+				target = obj;
+			}
+		});
+		if(target) {
+			nowMap.removeLayer(target);
+		}
+		$("#qt-layer-overlay-win" + win + ' li[data-name="' + name + '"]').remove();
+	});
+	
+	setTimeout(function() {
+		// 預載圖資說明
+		qt.ajax.getHtml({
+			"target" : "qt-layer-info-ctn",
+			"url" : home_titel+"/pro/map_layerInfo.html",
+			"quiet" : true
+		});
+	}, 1000);
+});
+
+// hide/show setting row
+$('#tabs-layer').on('click', '.qt-no-radius', function () {
+     $(".setting").hide();
+     $(this).find('.setting').show();
+});
+     
+/**
+ * 初始化圖層設定tabs。
+ */
+function qtAllLayerInitTabs() {
+	$(".js-tabs-layer-off").hide();
+	$("#tabsdt-layer-win1").show();
+	var myurl = home_titel+"/pro/extra_layer_mobile.html";
+	
+	$.ajax({
+		type: "POST",
+		url:myurl,
+		error: function(xhr) {
+			$.unblockUI();
+			var doc = '<div class="alert alert-warning text-center" style="margin: 1em;" role="alert">載入失敗</div>';
+			$("#qt-layer-my-overlay").empty().html(doc);
+	    },
+	    beforeSend:function(){
+			var doc = '<div class="alert alert-success text-center" role="alert" style="margin: 1em;"><i class="fa fa-refresh fa-fw fa-spin"></i>&nbsp;處理中，請稍後﹒﹒﹒</div>';
+			$("#qt-layer-my-overlay").empty().html(doc);
+		},
+		success: function(response) {
+			$("#qt-layer-my-overlay").empty()
+			var add_row =0;
+			var html= response;
+			if(isObj(mylayer)){	
+				for (var i=mylayer.length; i>=0; i--) {
+					var lynameid= "extra-"+mylayer[i];
+					var lyname= mylayer[i];
+					
+					if (isObj(mylayer[i])){	
+				
+					$(html).find("ul").each(function(i){
+						var v_ul = $(this);
+						v_ul.find("li").each(function(s){
+							if (lynameid===this.id){
+								var v_li = $(this);
+								var laytype = $(this).attr("laytype");
+								//console.error("lyname：" + lyname);	
+								v_li.find(".qt-eqh div input").each(function(){
+									 $(this).remove();
+								});
+								v_li.find(".qt-eqh div").each(function(x){
+									if (x==0){
+									  $(this).addClass("layer-square s_"+lyname);
+									  $(this).attr("onclick","chgOverlay('"+laytype+"', "+lyname+", '"+lyname+"', {win : '1'});");
+									}
+									if (x==1){
+									  $(this).attr("onclick","chgOverlay('"+laytype+"', "+lyname+", '"+lyname+"', {win : '1'});");
+									}
+								});
+
+								$("#qt-layer-my-overlay").append( $(this));
+								add_row++;
+								return false;
+							}
+						});
+					});
+					}
+				}
+			}
+			qtLayerChkSquare('1'); 
+		}
+	});
+}
+</script>
+		</div>
+
+			
+		
+		
+		<div class="sidePanel-ctn" id="qt-panel-ctn-4" data-id="4" data-pre="" data-next="4-1" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<div class="container-fluid panel-route">
+	<div class="row" style="margin-top: 1em;">
+		<div class="col-xs-12 text-center">
+			<a href="javascript: void();" class="route-btn-s js-route-clickType" title="點選起點" data-type="RouteStart"></a>			
+			<a href="javascript: void();" class="route-btn-p js-route-clickType" title="點選經過點" data-type="RoutePass"></a>
+			<a href="javascript: void();" class="route-btn-e js-route-clickType" title="點選目的地" data-type="RouteEnd"></a>
+			<input type="hidden" id="qt-route-clickType" value=""/>
+		</div>
+	</div>
+	
+	<div id="qt-route-sortList">
+		<div class="row qt-eqh js-route-sortItem" style="margin-top: 1em;" data-tag="0">
+			<div class="col-xs-3 text-center route-sortable">
+				<span class="route-txt-s">起點</span>
+			</div>
+			<div class="col-xs-7">
+				<input type="text" class="route-input js-route-pos" value="" style="width: 150px;"/>
+				<input type="hidden" class="js-route-pos-xy" value=""/>
+			</div>
+			<div class="col-xs-1 text-center">
+				&nbsp;
+			</div>
+			<div class="col-xs-1 text-center">
+				&nbsp;
+			</div>
+		</div>
+		
+		<div class="row qt-eqh js-route-sortItem" style="margin-top: 1em;" data-tag="6">
+			<div class="col-xs-3 text-center route-sortable">
+				<span class="route-txt-e">目的地</span>
+			</div>
+			<div class="col-xs-7">
+				<input type="text" class="route-input js-route-pos" value="" style="width: 150px;"/>
+				<input type="hidden" class="js-route-pos-xy" value=""/>
+			</div>
+			<div class="col-xs-1 text-center">
+				<a href="javaScript:void(0);" class="js-route-item-up" title="交換">
+					<span class="glyphicon glyphicon-sort" aria-hidden="true"></span><span class="sr-only">交換</span>
+				</a>
+			</div>
+			<div class="col-xs-1 text-center">
+				&nbsp;
+			</div>
+		</div>
+	</div>
+	
+	<form role="form" style="margin-top: 1em;">
+		交通工具：
+		<br>
+		<div class="radio radio-info radio-inline">
+			<input type="radio" name="qt-route-transtype" id="qt-route-transtype-car"  class = "trantool"  value="car" checked>&nbsp;<label for="qt-route-transtype-car">開車</label>
+
+		</div>
+				<span id = "highway" >
+					<input name="chk_tran_nohway" type="checkbox" id="chk_tran_nohway" value="avoid_highways" ><label for="chk_tran_nohway">避開高速公路</label>
+				</span>
+		<br>
+		<div class="radio radio-info radio-inline">
+			<input type="radio" name="qt-route-transtype" id="qt-route-transtype-foot"  class = "trantool"  value="foot">&nbsp;<label for="qt-route-transtype-foot">步行</label>
+		</div>
+	</form>
+	
+	<div class="row">
+		<hr class="qt-hr"/>
+	</div>
+	
+	<div class="row qt-eqh">
+		<div class="col-xs-12 text-right" style="padding-right: 15px;">
+			<button type="button" class="btn btn-success" id="qt-route-submit">
+				<i class="fa fa-search" aria-hidden="true"></i>&nbsp;進行規劃
+			</button>
+		</div>
+	</div>
+</div>
+
+<script>
+$(function() {
+	// 點選起點、目的地、經過點
+	$(".js-route-clickType").on("click", function(event) {
+		event.preventDefault();
+		var clickType = $(this).attr("data-type");
+		if("RouteStart" === clickType) {
+			$("#qt-route-sortList .js-route-pos").first().val("");
+			$("#qt-route-sortList .js-route-pos-xy").first().val("");
+			qtRouteClrPos("0");
+		} else if("RouteEnd" === clickType) {
+			$("#qt-route-sortList .js-route-pos").last().val("");
+			$("#qt-route-sortList .js-route-pos-xy").last().val("");
+			qtRouteClrPos("6");
+		} else if($(this).hasClass("disabled")) {
+			return;
+		}
+		
+//		qtRouteClrSortList();
+		
+		regRouteClick(clickType);
+		
+		// 調整網頁布局
+		chgViewSize();
+		
+		if(qt.util.isXs()) {
+			qtPanelClose();
+		}
+	});
+	
+	// 交換(與上面的位置交換)
+	$("#qt-route-sortList").on("click", "a.js-route-item-up", function(event) {
+		var jqItem = $(this).closest(".js-route-sortItem");
+		var tag = jqItem.attr("data-tag");
+		var jqPos = jqItem.find(".js-route-pos").eq(0);
+		var jqPosxy = jqItem.find(".js-route-pos-xy").eq(0);
+		
+		var jqItemPre = jqItem.prev(".js-route-sortItem");
+		var tagPre = jqItemPre.attr("data-tag");
+		var jqPosPre = jqItemPre.find(".js-route-pos").eq(0);
+		var jqPosxyPre = jqItemPre.find(".js-route-pos-xy").eq(0);
+		
+		var pos = jqPos.val().trim();
+		var posxy = jqPosxy.val();
+		
+		jqPos.val(jqPosPre.val().trim());
+		jqPosxy.val(jqPosxyPre.val());
+		
+		jqPosPre.val(pos);
+		jqPosxyPre.val(posxy);
+		
+		// 移除標記
+		qtRouteClrPos(tag);
+		qtRouteClrPos(tagPre);
+		
+		// 更新標記
+		var id = null;
+		var type = null;
+		var coord = null;
+		pos = jqPos.val();
+		posxy = jqPosxy.val();
+		if(!qt.util.hasEmpty(posxy)) {
+			id = "路徑規劃位置標記-" + tag;
+			coord = posxy.split(",");
+			if("0" === tag) {
+				type = "RouteStart";
+			} else if("6" === tag) {
+				type = "RouteEnd";
+			} else {
+				type = "RoutePass";
+			}
+			
+			fly2Pos(routeVec, type, coord[0], coord[1], checkTypePng(type), {
+				"id" : id,
+				"label" : pos,
+				"clean" : false,
+				"cookie" : false
+			});
+		}
+		
+		pos = jqPosPre.val();
+		posxy = jqPosxyPre.val();
+		if(!qt.util.hasEmpty(posxy)) {
+			id = "路徑規劃位置標記-" + tagPre;
+			coord = posxy.split(",");
+			if("0" === tagPre) {
+				type = "RouteStart";
+			} else if("6" === tagPre) {
+				type = "RouteEnd";
+			} else {
+				type = "RoutePass";
+			}
+			
+			fly2Pos(routeVec, type, coord[0], coord[1], checkTypePng(type), {
+				"id" : id,
+				"label" : pos,
+				"clean" : false,
+				"cookie" : false
+			});
+		}
+		
+		qtRouteClrSortList();
+	});
+	
+	// 移除
+	$("#qt-route-sortList").on("click", "a.js-route-item-rm", function(event) {
+		var jqItem = $(this).closest(".js-route-sortItem");
+		var tag = jqItem.attr("data-tag");
+		
+		// 移除標記
+		qtRouteClrPos(tag);
+		
+		// 移除HTML
+		jqItem.remove();
+		
+		qtRouteClrSortList();
+	});
+	
+	// 初始化路徑規劃自動完成
+	qtRouteInitAuto();
+	
+	// 進行規劃
+	$("#qt-route-submit").on("click", function(event) {
+		event.preventDefault();
+		
+		qtRouteClrSortList();
+		
+		qtRouteLoad();
+	});
+
+
+		$(".trantool").on("click", function(event) {
+			if("foot" === this.value) {
+				$("#highway").hide();
+				$("#chk_tran_nohway").prop("checked", false);
+			} else {
+				$("#highway").show();
+			}
+		});
+});
+</script>
+
+		</div>
+		<div class="sidePanel-ctn" id="qt-panel-ctn-4-1" data-id="4-1" data-pre="4" data-next="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<div class="qt-tabs" id="tabs-route">
+	<ul>
+		<li><a href="#tabsdt-route-win2" style="padding: .5em;">時間最短路線&nbsp;&nbsp;<span style="font-size: 16px; font-weight: bold; color: green;">|</span></a></li>
+		<li><a href="#tabsdt-route-win1" style="padding: .5em;">距離最短路線&nbsp;&nbsp;<span style="font-size: 16px; font-weight: bold; color: red;">|</span></a></li>
+	</ul>
+
+
+	
+	<div id="tabsdt-route-win2">
+		<div class="container-fluid panel-route-list" id="qt-route-list-win2"></div>
+	</div>
+
+	
+	<div id="tabsdt-route-win1">
+		<div class="container-fluid panel-route-list" id="qt-route-list-win1"></div>
+	</div>
+</div>
+
+<script>
+$(function() {
+	// 顯示資訊視窗
+	$("#qt-route-list-win1, #qt-route-list-win2").on("click", "a.js-qt-route-row", function(event) {
+		event.preventDefault();
+		var style = $(this).attr("data-style");
+		var index = $(this).attr("data-index");
+		var road = $(this).attr("data-road");
+		var direction = $(this).attr("data-direction");
+		var distance = $(this).attr("data-distance");
+		var lon = $(this).attr("data-lon");
+		var lat = $(this).attr("data-lat");
+		
+		var html = '<div class="container-fluid popup-route">';
+		html += '<div class="row qt-eqh">';
+		html += '<ul class="list-group">';
+		html += '<li class="list-group-item qt-no-radius">';
+		html += '<div class="row qt-eqh">';
+		html += '<div class="col-xs-2"><div class="' + style + '"></div></div>';
+		html += '<div class="col-xs-6">' + (parseInt(index) + 1) + '&nbsp;' + road + '</div>';
+		html += '<div class="col-xs-4 adp-distance">' + distance + '</div>';
+		html += '</div>';
+		html += '</li>';
+		html += '</ul>';
+		html += '</div>';
+		html += '</div>';
+		
+		qtPopupShow(html, lon, lat);
+		
+		if(qt.util.isXs()) {
+			qtPanelClose();
+		}
+	});
+	
+	// 返回路徑規劃
+	$("#qt-panel").on("back:qt.route", function(event, obj) {
+		if("4" === obj.newId && "4-1" === obj.oldId) {
+			// 關閉資訊視窗
+			qtPopupHide();
+			
+			// 註銷點選起點、目的地
+			unregRouteClick();
+			
+			// 清空標記
+			qtRouteClrPos();
+			routeVec.setVisible(false);
+			
+			// 清空圖層
+			qt.map.clrLayer(shortestVec);
+			qt.map.clrLayer(fastestVec);
+			shortestVec.setVisible(false);
+			fastestVec.setVisible(false);
+			
+			// 清空內容
+			$("#qt-route-list-win1").empty();
+			$("#qt-route-list-win2").empty();
+			
+			// 清空輸入
+			$("#qt-route-sortList .js-route-pos-xy").val("");
+			qtRouteClrSortList();
+			$("#qt-route-transtype-car").prop("checked", true);
+		}
+	});
+});
+</script>
+
+		</div>
+		
+		
+		<!--  
+		<div class="sidePanel-ctn" id="qt-panel-ctn-5" data-id="5" data-pre="" data-next="" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+
+
+<div class="container-fluid panel-cfg">
+	<div class="row">
+		<div class="col-xs-12 cfg-title">雙地圖視窗</div>
+	</div>
+	<form role="form" style="margin-top: 1em;">
+		<div class="radio radio-info">
+			<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-1" value="1">&nbsp;<label for="qt-cfg-2map-1">開啟鄰圖連續模式</label>
+		</div>
+		<div class="radio radio-info">
+			<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-2" value="2">&nbsp;<label for="qt-cfg-2map-2">開啟相同視景模式</label>
+		</div>
+		<div class="radio radio-info">
+			<input type="radio" name="qt-cfg-2map" id="qt-cfg-2map-off" value="off" checked>&nbsp;<label for="qt-cfg-2map-off">關閉</label>
+		</div>
+	</form>
+	
+	<div class="row">
+		<hr class="qt-hr"/>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-12 cfg-title">圖磚文字</div>
+	</div>
+	<form role="form" style="margin-top: 1em;">
+		<div class="radio radio-info radio-inline">
+			<input type="radio" name="qt-cfg-layerType" id="qt-cfg-layerType-1" value="1" checked>&nbsp;<label for="qt-cfg-layerType-1">一般</label>
+		</div>
+		<div class="radio radio-info radio-inline" style="display: none;" >
+			<input type="radio" name="qt-cfg-layerType" id="qt-cfg-layerType-2" value="2">&nbsp;<label for="qt-cfg-layerType-2">向量</label>
+		</div>
+		<div class="radio radio-info radio-inline">
+			<input type="radio" name="qt-cfg-layerType" id="qt-cfg-layerType-3" value="3">&nbsp;<label for="qt-cfg-layerType-3">高DPI</label>
+		</div>
+	</form>
+	
+	<div class="row">
+		<hr class="qt-hr"/>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-12 cfg-title">地圖旋轉檢視</div>
+	</div>
+	<form role="form" style="margin-top: 1em;">
+		<div class="radio radio-info radio-inline">
+			<input type="radio" name="qt-cfg-rotate" id="qt-cfg-rotate-true" value="true">&nbsp;<label for="qt-cfg-rotate-true" title="PC版裝置：按住Alt+Shift鍵，並按住滑鼠左鍵，移動滑鼠來進行旋轉檢視">啟用</label>
+		</div>
+		<div class="radio radio-info radio-inline">
+			<input type="radio" name="qt-cfg-rotate" id="qt-cfg-rotate-false" value="false" checked>&nbsp;<label for="qt-cfg-rotate-false">停用</label>
+		</div>
+	</form>
+</div>
+
+<script>
+"use strict";
+$(function() {
+	// 雙地圖視窗
+	$('input[name="qt-cfg-2map"]').on("change", function() {
+		chg2Map();
+		
+		// 開啟圖層設定面板
+		if("off" === this.value) {
+			qtPanelHide();
+		} else {
+			$("#qt-menu-fun-3").trigger("click");
+		}
+	});
+	
+	// 地圖旋轉檢視
+	$('input[name="qt-cfg-rotate"]').on("change", function() {
+		if("true" === getQtCfgRotate()) {
+			enableRotate();
+			
+			// 調整網頁布局
+			chgViewSize();
+		} else {
+			unableRotate();
+		}
+	});
+	
+	// 圖磚類別
+	$('input[name="qt-cfg-layerType"]').on("change", function() {
+		chgVecMapView();
+	});
+});
+</script>
+
+		</div>
+		-->
+		
+		<div class="sidePanel-ctn" id="qt-panel-ctn-5" data-id="5" data-pre="" data-next="" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+<div class="container-fluid panel-cfg"><BR>
+	<div class="search_border">
+			<div >
+				<span class="form_text">縣市：</span><select
+					class="custom-select form_select" id="land_city" onChange="changeArea('land_city','land_area_office');" >
+					<option selected>請選擇</option>
+				</select> 
+			</div>
+			<div >
+				<span class="form_text">鄉鎮市區：</span><select
+					class="custom-select form_select" id="land_area_office" onChange="changeSection('land_city','land_area_office', 'land_sectioncode', 'land_section',true)">
+					<option selected>請選擇</option>
+				</select>
+			</div>
+			<div >
+				<table>
+					<tbody>
+						<tr>
+						<td><span class="form_text">地段：</span></td>
+						<td><input type="text" size="4"  maxlength="4" id="land_sectioncode" value="" class="form_box" placeholder="代碼"
+						onfocus="javascript:if(this.value==defaultValue){this.value='';}" 
+						onblur="javascript:if(this.value==''){this.value='';} keySection('land_city','land_area_office', 'land_section', 'land_sectioncode');"  ></input></td>
+						<td  style="width: 55%;" >
+							<select id="land_section" class="custom-select form_select" onChange="changeSectionCode('land_section', 'land_sectioncode')" >
+									<option value="">----------</option>
+							</select>
+						</td>
+					</tbody>
+				</table>
+			</div>
+			<div >
+				<span class="form_text">地號：</span>
+				<input type="text" size="8"  maxlength="10" id="landcode" value="" class="form_box"  ></input>
+				<br> (輸入範例：200 或 200-1 或 0220-0001)
+				<br> (備註：一次僅能查詢一筆地號)
+			</div>
+
+			
+			<div class="row qt-eqh">
+				<div class="col-xs-12 text-right" style="padding-right: 15px;">
+					<button type="button" class="btn btn-success" id="qt-land-submit">
+						<i class="fa fa-search" aria-hidden="true"></i>&nbsp;查詢
+					</button>
+				</div>
+			</div>
+
+	</div>
+</div>
+
+<script type="text/javascript" >
+"use strict";
+$(function() {
+	
+	changeCountry("land_city");
+
+		// 進行規劃
+	$("#qt-land-submit").on("click", function(event) {
+		event.preventDefault();
+			qtLandLoad('land_city', 'land_area_office', 'land_section', 'land_sectioncode', 'landcode', 'qt-land-ctn');
+	});
+});
+
+</script>
+		</div>
+		
+		<div class="sidePanel-ctn" id="qt-panel-ctn-6" data-id="6" data-pre="" data-next="" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+
+<div class="container-fluid panel-cfg"><BR>
+	<div class="search_border">
+			<div id="div_longitude" >
+					<span class="form_text">東經：</span>
+					<BR>
+					<input type="text"  class="form_box" size="4" maxlength="4" id="longitude_1" onblur="croodQryVal('2')">度
+					<input type="text"  class="form_box" size="4"  maxlength="4" id="longitude_2" onblur="croodQryVal('2')">分
+					<input type="text"  class="form_box" size="5" maxlength="5"  id="longitude_3" onblur="croodQryVal('2')">秒
+			</div>	
+			<div id="div_latitude">
+				<span class="form_text">北緯：</span>
+				<BR>
+				<input type="text" class="form_box" size="4"  maxlength="4" id="latitude_1" onblur="croodQryVal('2')">度
+				<input type="text"  class="form_box" size="4"  maxlength="4"  id="latitude_2" onblur="croodQryVal('2')">分
+				<input type="text"  class="form_box"  size="5" maxlength="5" id="latitude_3" onblur="croodQryVal('2')">秒 
+			</div>
+			<HR>
+			<div>
+				<div id="div_lon" >
+					<span class="form_text">經度：</span>				
+					<input type="text" class="form_box" size="15"  maxlength="10" id="longitude" onblur="croodQryVal('1')">
+				</div>
+				<div id="div_lat"  >
+					<span class="form_text">緯度：</span>
+					<input type="text" class="form_box" size="15"  maxlength="10" id="latitude" onblur="croodQryVal('1')">
+				</div>
+			</div>
+			<div class="row qt-eqh">
+				<div class="col-xs-12 text-right" style="padding-right: 15px;">
+					<button type="button" class="btn btn-success"  onclick="setPosCoordC('97','longitude','latitude','crs')">
+						轉換97坐標
+					</button>
+
+					<button type="button" class="btn btn-success"  onclick="setlonlat2()">
+						<i class="fa fa-search" aria-hidden="true"></i>&nbsp;定位
+					</button>
+				</div>
+			</div>
+			<HR>
+			<div ><font size="3" color="#663300">■ TWD97坐標</font>
+			</div>
+			<div >
+				分帶:
+				<select id="crs" class="custom-select form_select" >
+						<option value="A">臺灣(121度)</option>
+						<option value="4">釣魚臺(123度)</option>
+						<option value="X">澎,金,馬(119度)</option>
+						<option value="2">東沙(117度)</option>
+						<option value="3">南沙(115度)南沙</option>
+				</select>
+			</div>
+
+			<!-- 
+			<div class="row qt-eqh">
+				<div class="col-xs-12 text-right" style="padding-right: 15px;">
+					<button type="button" class="btn btn-success"  onclick="setPosCoordC('97','longitude','latitude','crs')">
+						轉換97坐標
+					</button>
+				</div>
+			</div>
+			 -->
+
+			<div id="div_twd97_x" >
+					<span class="form_text">E：</span>
+					<input type="text" class="form_box" size="18"  maxlength="18"id="twd97_x">
+			</div>	
+			<div id="div_twd97_y" >
+					<span class="form_text">N：</span>
+					<input type="text"  class="form_box" size="18"  maxlength="18" id="twd97_y">
+			</div>
+			<div class="row qt-eqh">
+				<div class="col-xs-12 text-right" style="padding-right: 15px;">
+					<button type="button" class="btn btn-success"  onclick="setPosCoordC('84','twd97_x','twd97_y','crs')">
+						<i class="fa fa-search" aria-hidden="true"></i>&nbsp;定位
+					</button>
+				</div>
+			</div>
+	</div>
+</div>
+
+
+<script>
+"use strict";
+$(function() {
+
+});
+			function setlonlat(){
+				var x =$("#longitude_1").val()+'-'+$("#longitude_2").val()+'-'+$("#longitude_3").val();
+				var y =$("#latitude_1").val()+'-'+$("#latitude_2").val()+'-'+$("#latitude_3").val();
+				$('#longitude').val(degToDec(x,'lon'));
+				$('#latitude').val(degToDec(y,'lat'));
+				var str ="";
+				if("1" === getQtLonLatMapType()) {
+					str = "經緯度:"+$("#longitude_1").val()+'-'+$("#longitude_2").val()+"-"+$("#longitude_3").val()+' '+$("#latitude_1").val()+'-'+$("#latitude_2").val()+"-"+$("#latitude_3").val()+'(度分秒)';	
+				}else{
+					str = "緯經度:"+$("#latitude_1").val()+'-'+$("#latitude_2").val()+"-"+$("#latitude_3").val()+' '+$("#longitude_1").val()+'-'+$("#longitude_2").val()+"-"+$("#longitude_3").val()+'(度分秒)';	
+				}
+
+				 
+				var iconStyle = new ol.style.Style({
+				  image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
+				        rotateWithView:  false,
+				        anchor: [0.5, 1],
+				        anchorXUnits: 'fraction',
+				        anchorYUnits: 'fraction',
+						src:checkTypePng("section")
+				  })),
+				  text: new ol.style.Text({
+					text: str,
+					scale: 1.3,
+					offsetX: 0,
+					offsetY: -20,
+					fill: new ol.style.Fill({
+					  color: '#FFF'
+					}),
+					stroke: new ol.style.Stroke({
+					  color: '#6B6BEB',
+					  width: 3.5
+					})
+				  })
+				});		
+				fly2Pos(posvectors, "coord", $('#longitude').val(),$('#latitude').val(), checkTypePng("coord"), {
+					"id" : $('#longitude').val()+"_"+$('#latitude').val(),
+					"label" :str,
+					"style" : iconStyle,	
+					"clean" : false,
+					"cookie" : true
+				});
+
+			}
+			function setlonlat2(){
+
+				var str ="";
+				if("1" === getQtLonLatMapType()) {
+					str = "經緯度:"+decToDeg($('#longitude').val(),'lon')+' '+decToDeg($('#latitude').val(),'lat')+'(度分秒)';	
+				}else{
+					str = "緯經度:"+decToDeg($('#latitude').val(),'lat')+' '+decToDeg($('#longitude').val(),'lon')+'(度分秒)';	
+				}
+				var iconStyle = new ol.style.Style({
+				  image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
+				        rotateWithView:  false,
+				        anchor: [0.5, 1],
+				        anchorXUnits: 'fraction',
+				        anchorYUnits: 'fraction',
+						src:checkTypePng("section")
+				  })),
+				  text: new ol.style.Text({
+					text: str,
+					scale: 1.3,
+					offsetX: 0,
+					offsetY: -20,
+					fill: new ol.style.Fill({
+					  color: '#FFF'
+					}),
+					stroke: new ol.style.Stroke({
+					  color: '#6B6BEB',
+					  width: 3.5
+					})
+				  })
+				});		
+				fly2Pos(posvectors, "coord", $('#longitude').val(),$('#latitude').val(), checkTypePng("coord"), {
+					"id" : $('#longitude').val()+"_"+$('#latitude').val(),
+					"label" :str,
+					"style" : iconStyle,	
+					"clean" : false,
+					"cookie" : true
+				});
+				croodPosQryVal();
+			}
+
+			function setPosCoordC(tyep,cenx,ceny,crs) {
+				if(($("#"+cenx).val()=="")&&($("#"+ceny).val()==""))
+				return;	
+
+				var tmd = croodTMD($("#"+cenx).val());
+				var city ="";
+				if(tyep=='97'){
+					if (tmd==115) //(115度)南沙
+							city = "3";
+					else if (tmd==117) //(117度)東沙
+							city = "2";
+					else if (tmd==119) //(119度)澎,金,馬
+							city = "X";
+					else if (tmd==123) //
+						city = "4";					
+					else // (121度)臺灣
+							city = "A";
+				}
+				else{
+					city = 	$("#"+crs).val();
+				}
+
+				$.ajax({
+					type: "POST",
+					url: "./transcoord.action",
+					dataType: "xml",
+					data:{type : tyep ,x:$("#"+cenx).val(),y:$("#"+ceny).val(),city:city},
+					error: function(xhr) {
+						//showMessage("坐標查詢失敗", "msg_panel","3000");
+						},
+					success: function(xml) {
+						var x, y;
+						$(xml).find('Code').each(function(){
+							x = $(this).find('coordX').text();
+							y = $(this).find('coordY').text();
+						 if(tyep=='97'){
+							$("#twd97_x").val(fromatNum(x,3));
+							$("#twd97_y").val(fromatNum(y,3));
+						 }
+						 else{
+							$("#longitude").val(fromatNum(x,5));
+							$("#latitude").val(fromatNum(y,5));
+							setlonlat2();
+						 }
+						});	
+					}
+				});
+//				var xy ;
+//				if(tyep=='97'){
+//					var tmd = croodTMD($("#"+cenx).val());
+//					var tmdstr ="";
+//					if (tmd=="?"){
+//						 xy =coord.toTwd97($("#"+ceny).val(),$("#"+cenx).val(),121);
+//					}
+//					else{
+//						 xy =coord.toTwd97($("#"+ceny).val(),$("#"+cenx).val(),tmd);
+//					}
+//					$("#twd97_x").val(xy[0].toFixed(3));
+//					$("#twd97_y").val(xy[1].toFixed(3));
+//				}
+//				else{
+//						xy =coord.toGws84($("#"+cenx).val(),$("#"+ceny).val());
+//						$("#longitude").val(xy.lng.toFixed(6));
+//						$("#latitude").val(xy.lat.toFixed(6));
+//						setlonlat2();
+//				}
+
+
+			}
+
+		function croodQryVal(type){
+
+				if (type == '1'){
+					if ($("#longitude").val()!="" && $("#latitude").val()!=""){
+						var x = decToDeg($("#longitude").val(),'lon') ;
+						var y = decToDeg($("#latitude").val(),'lat') ;
+						$("#longitude_1").val(x.split("-")[0] );
+						$("#longitude_2").val(x.split("-")[1]);
+						$("#longitude_3").val(x.split("-")[2]);
+						$("#latitude_1").val(y.split("-")[0]);
+						$("#latitude_2").val(y.split("-")[1]);
+						$("#latitude_3").val(y.split("-")[2]);
+					}
+				}
+				else{
+					if ($("#longitude_1").val()!="" && $("#longitude_2").val()!=""&& $("#longitude_3").val()!=""
+							&& $("#latitude_1").val()!="" && $("#latitude_2").val()!=""&& $("#latitude_3").val()!="" ){
+							var x =$("#longitude_1").val()+'-'+$("#longitude_2").val()+'-'+$("#longitude_3").val();
+							var y =$("#latitude_1").val()+'-'+$("#latitude_2").val()+'-'+$("#latitude_3").val();
+							$('#longitude').val(degToDec(x,'lon'));
+							$('#latitude').val(degToDec(y,'lat'));
+					}
+				}
+		}
+
+	 </script>
+
+		</div>
+		
+		<div class="sidePanel-ctn" id="qt-panel-ctn-7" data-id="7" data-pre="" data-next="7-1" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+<style>
+
+div.marksubpanel
+{
+	margin:0px;
+	padding:5px;
+}
+
+div.markpanel,p.flip
+{
+	margin:0px;
+	padding:5px;
+}
+div.markpanel
+{
+	height:auto;
+	display:none;
+}
+</style>
+
+
+<div class="container-fluid panel-cfg">
+		<BR>
+			<table>
+				<tr>
+					<td valign="top" width="145">
+						<div >
+							<input type="checkbox" id = "qt-cfgmark-1-all" value="1" onclick="SelectTypeByMark('qt-cfgmark-1-all');" checked>&nbsp;<label  for = "qt-cfgmark-1-all"  >地標</label>&nbsp;&nbsp;
+						</div>
+						<div class="marksubpanel" id = "qt-cfgmark-1-div">
+							<div>
+							<input type="checkbox" name = "qt-cfgmark-1-all" id = "qt-cfgmark-1-1-all" value="1" onclick="checkboxSelectType('qt-cfgmark-1-1-all');" checked>&nbsp;<label for = "qt-cfgmark-1-1-all"  >文教</label>&nbsp;&nbsp;
+							<a  href="javascript:void(0);"  ><img src="./images/opacityDn.png" id = "qt-cfgmark-1-1-div-img" onclick="markdivshow('qt-cfgmark-1-1-div');" /></a>
+						
+								<div class="markpanel" id = "qt-cfgmark-1-1-div">
+<div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920101' value='大專院校' checked>&nbsp;<label for='qt-cfgmark-1-1-9920101' >大專院校</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920102' value='中學' checked>&nbsp;<label for='qt-cfgmark-1-1-9920102' >中學</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920103' value='小學' checked>&nbsp;<label for='qt-cfgmark-1-1-9920103' >小學</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920104' value='職訓中心' checked>&nbsp;<label for='qt-cfgmark-1-1-9920104' >職訓中心</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920105' value='幼兒園' checked>&nbsp;<label for='qt-cfgmark-1-1-9920105' >幼兒園</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920106' value='特殊學校' checked>&nbsp;<label for='qt-cfgmark-1-1-9920106' >特殊學校</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920201' value='圖書館' checked>&nbsp;<label for='qt-cfgmark-1-1-9920201' >圖書館</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920202' value='博物館' checked>&nbsp;<label for='qt-cfgmark-1-1-9920202' >博物館</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920203' value='資料及陳列館' checked>&nbsp;<label for='qt-cfgmark-1-1-9920203' >資料及陳列館</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920204' value='文化中心' checked>&nbsp;<label for='qt-cfgmark-1-1-9920204' >文化中心</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920205' value='社教館' checked>&nbsp;<label for='qt-cfgmark-1-1-9920205' >社教館</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9920206' value='美術館' checked>&nbsp;<label for='qt-cfgmark-1-1-9920206' >美術館</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9940101' value='劇院' checked>&nbsp;<label for='qt-cfgmark-1-1-9940101' >劇院</label></div><div>&nbsp;&nbsp;<input type='checkbox' name ='qt-cfgmark-1-1-all' id ='qt-cfgmark-1-1-9940102' value='音樂廳' checked>&nbsp;<label for='qt-cfgmark-1-1-9940102' >音樂廳</label></div>
+								</div>
+							</div>
+							<div >
+							<input type="checkbox" name = "qt-cfgmark-1-all" id = "qt-cfgmark-1-2-all" value="1" onclick="checkboxSelectType('qt-cfgmark-1-2-all');" checked>&nbsp;<label for = "qt-cfgmark-1-2-all"  >醫療社福</label>&nbsp;&nbsp;
+							<a  href="javascript:void(0);"  ><img src="./images/opacityDn.png" id = "qt-cfgmark-1-2-div-img"  onclick="markdivshow('qt-cfgmark-1-2-div');" /></a>
+								<div class="markpanel" id = "qt-cfgmark-1-2-div">
+<div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-2-all' id ='qt-cfgmark-1-2-9930101' value='醫學中心醫院' checked>&nbsp;<label for='qt-cfgmark-1-2-9930101' >醫學中心醫院</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-2-all' id ='qt-cfgmark-1-2-9930102' value='衛生所' checked>&nbsp;<label for='qt-cfgmark-1-2-9930102' >衛生所</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-2-all' id ='qt-cfgmark-1-2-9930301' value='兒少福利機構' checked>&nbsp;<label for='qt-cfgmark-1-2-9930301' >兒少福利機構</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-2-all' id ='qt-cfgmark-1-2-9930302' value='老人福利機構' checked>&nbsp;<label for='qt-cfgmark-1-2-9930302' >老人福利機構</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-2-all' id ='qt-cfgmark-1-2-9930303' value='婦女福利機構' checked>&nbsp;<label for='qt-cfgmark-1-2-9930303' >婦女福利機構</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-2-all' id ='qt-cfgmark-1-2-9930304' value='身心障礙福利機構' checked>&nbsp;<label for='qt-cfgmark-1-2-9930304' >身心障礙福利機構</label></div>
+								</div>
+							
+							</div>
+							<div >
+							<input type="checkbox" name = "qt-cfgmark-1-all" id = "qt-cfgmark-1-3-all" value="1" onclick="checkboxSelectType('qt-cfgmark-1-3-all');" checked>&nbsp;<label for = "qt-cfgmark-1-3-all"  >鄰避設施</label>&nbsp;&nbsp;
+							<a  href="javascript:void(0);"  ><img src="./images/opacityDn.png"  id = "qt-cfgmark-1-3-div-img"  onclick="markdivshow('qt-cfgmark-1-3-div');" /></a>
+								<div class="markpanel" id = "qt-cfgmark-1-3-div">
+<div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-3-all' id ='qt-cfgmark-1-3-9930201' value='殯儀館' checked>&nbsp;<label for='qt-cfgmark-1-3-9930201' >殯儀館</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-3-all' id ='qt-cfgmark-1-3-9960203' value='加油站' checked>&nbsp;<label for='qt-cfgmark-1-3-9960203' >加油站</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-3-all' id ='qt-cfgmark-1-3-9370300' value='環保設施' checked>&nbsp;<label for='qt-cfgmark-1-3-9370300' >環保設施</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-3-all' id ='qt-cfgmark-1-3-9930202' value='火化場' checked>&nbsp;<label for='qt-cfgmark-1-3-9930202' >火化場</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-3-all' id ='qt-cfgmark-1-3-9930203' value='靈骨塔及納骨塔' checked>&nbsp;<label for='qt-cfgmark-1-3-9930203' >靈骨塔及納骨塔</label></div><div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-1-3-all' id ='qt-cfgmark-1-3-9350200' value='墓地設施' checked>&nbsp;<label for='qt-cfgmark-1-3-9350200' >墓地設施</label></div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td valign="top" width="100">
+						<div >
+							<input type="checkbox" id = "qt-cfgmark-2-all" value="2" onclick="checkboxSelectType('qt-cfgmark-2-all');" checked>&nbsp;<label for = "qt-cfgmark-2-all"  >工商</label>&nbsp;&nbsp;
+							<!-- <a  href="javascript:void(0);"  ><img src="./images/opacityDn.png" id = "qt-cfgmark-2-div-img"  onclick="markdivshow('qt-cfgmark-2-div');" /></a> -->
+						</div>
+						<div class="markpanel" id = "qt-cfgmark-2-div">
+<div>&nbsp;&nbsp;<input type='checkbox'  name ='qt-cfgmark-2-all'  id ='qt-cfgmark-2-corporation' value='公司' checked>&nbsp;<label for='qt-cfgmark-2-corporation' >公司</label></div>
+						</div>
+						<div >
+							<input type="checkbox" id = "qt-cfgmark-3-all" value="門牌" checked>&nbsp;<label for = "qt-cfgmark-3-all"  >門牌</label>
+						</div>
+					</td>
+
+				</tr>
+				<tr>
+					<td valign="top" colspan = 3>
+						<div>
+							<label ><B>地圖中心坐標：</B></label>	
+							<span id="markpos_xy" class="form_text"></span>
+						</div>
+						
+							<label >半徑：</label>	
+							<input type="text"  id="markpos_radius" size="4" maxlength="4" value="500" >公尺
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan = 3>
+							<input  type="hidden" name="btm_left" id="btm_left" value="">
+							<input  type="hidden" name="top_right" id="top_right" value="">
+							<input  type="hidden" name="markpos_center" id="markpos_center" value="">
+							<input  type="hidden" name="markpos_area" id="markpos_area" value="">
+							<input  type="hidden" name="markpos_type" id="markpos_type" value="Circle">
+							<button type="button" class="btn btn-success"  onclick="catchMarkpos()">
+								<i class="fa fa-search" aria-hidden="true"></i>&nbsp;周邊檢索
+							</button>
+					</td>
+				</tr>
+			</table>
+</div>
+
+<script>
+function SelectTypeByMark(checkboxname){
+	if($("#"+checkboxname).prop("checked")){
+		$('input:checkbox[name="'+checkboxname+'"]').each(function() {
+			$(this).prop("checked", true);
+		});
+	}else{
+	    $('input:checkbox[name="'+checkboxname+'"]').each(function() {
+	    	$(this).prop("checked", false);
+	    });      
+	}
+			checkboxSelectType('qt-cfgmark-1-1-all');
+			checkboxSelectType('qt-cfgmark-1-2-all');
+			checkboxSelectType('qt-cfgmark-1-3-all');
+}
+//checkbox 全選or反選
+function checkboxSelectType(checkboxname){
+	if($("#"+checkboxname).prop("checked")){
+		$('input:checkbox[name="'+checkboxname+'"]').each(function() {
+			$(this).prop("checked", true);
+		});
+	}else{
+	    $('input:checkbox[name="'+checkboxname+'"]').each(function() {
+	    	$(this).prop("checked", false);
+	    });      
+	}    
+}
+
+function markdivshow(targetdiv){
+		if (!$("#"+targetdiv).is(':visible')){
+			$('#'+targetdiv).slideToggle('slow');
+			$("#"+targetdiv+"-img").attr("src","./images/opacityUp.png");
+		}
+		else{
+			$('#'+targetdiv).slideToggle('hide');
+			$("#"+targetdiv+"-img").attr("src","./images/opacityDn.png");
+		}
+}
+
+
+</script>
+
+		</div>
+		<div class="sidePanel-ctn" id="qt-panel-ctn-7-1" data-id="7-1" data-pre="7" data-next="" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+<div class="container-fluid panel-cfg">
+	<div class="qt-tabs" id="tabs-landmark-list">
+		<ul>
+			<li><a href="#tabsdt-marklist-win1" style="padding: .5em;" id="tabsdt-marklist-1">地標</a></li>
+			<li><a href="#tabsdt-marklist-win2" style="padding: .5em;" id="tabsdt-marklist-2">工商</a></li>
+			<li><a href="#tabsdt-marklist-win3" style="padding: .5em;" id="tabsdt-marklist-3">門牌</a></li>
+		</ul>
+
+
+		
+		<div id="tabsdt-marklist-win1">
+			<BR>
+			<ul class="container-fluid panel-mark-list neighbor" id="qt-marklist-1">
+			</ul>
+		</div>
+
+		
+		<div id="tabsdt-marklist-win2">
+			<BR>
+			<ul class="container-fluid panel-mark-list neighbor" id="qt-marklist-2">
+			</ul>
+		</div>
+		
+		<div id="tabsdt-marklist-win3">
+			<BR>
+			<ul class="container-fluid panel-mark-list neighbor" id="qt-marklist-3">
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script>
+$(function() {
+
+	$("#tabs-landmark-list").tabs();
+		// 返回路徑規劃
+	$("#qt-panel").on("back:qt.route", function(event, obj) {
+		if("7" === obj.newId && "7-1" === obj.oldId) {
+			qtPosClrPoint(posvectors,"markpos");
+			qtPopupHide(true);
+		}
+	});
+});
+</script>
+
+		</div>
+		
+		<div class="sidePanel-ctn" id="qt-panel-ctn-8" data-id="8" data-pre="" data-next="" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+<style>
+.spanb {
+    margin-left: 1px;
+    padding: 1px;
+    border: 1px solid rgb(255 16 16);
+    border-image: none;
+    color: rgb(156 94 58);
+    font-size: 10px;
+}
+.img_list {
+    padding: 3px;
+    border: 1px solid #5bc0de;
+    border-image: none;
+}		
+
+</style>
+<div class="qt-tabs" id="tabs-pointsave">
+	<ul>
+		<li><a href="#tabsdt-pointsave-win1" style="padding: .5em;">定位結果</a></li>
+		<li><a href="#tabsdt-pointsave-win2" id="pointsave_qry" style="padding: .5em;">儲存結果列表</a></li>
+	</ul>
+
+	<div id="tabsdt-pointsave-win1">
+		<div class="container-fluid panel-point" id="qt-pointsave-ctn">
+			<div class="container-fluid panel-point">
+				<div class="col-xs-12 text-center">
+					<button type="button" class="btn btn-default js-qt-point-save" id="qt-point-save-btn">
+						<img src="./mobile/images/layer/plus.png" style="width: 18px; height: 18px;">&nbsp;點選坐標
+					</button>
+					<button type="button" class="btn btn-default js-qt-point-gps" id="qt-point-gps-btn">
+						<img src="./mobile/images/9960201.png" style="width: 18px; height: 18px;">&nbsp;GPS坐標
+					</button>
+				</div>
+				<div id="qt-point-save">
+					<div >
+						<span style="color: #ed1c24;">*&nbsp;</span><span class="form_text">標題 ：</span>
+						<input type="text" size="20"  maxlength="50" id="db_title" name="db_title"  value="" class="form_box"  ></input>
+					</div>
+					<div >
+						<span class="form_text">&nbsp;&nbsp;備註 ：</span>
+						<textarea rows="3" cols="25"
+									id="db_remark" name="db_remark" class="form_box"  ></textarea>
+					</div>
+					<div >
+						<span class="form_text">&nbsp;&nbsp;放大層級 ：</span>
+						<input type="text" size="2"  maxlength="2" id="db_poszoom" name="db_poszoom" value="" class="form_box"  ></input>
+					</div>
+					<div >
+						<span class="form_text">&nbsp;&nbsp;坐標 ：</span>
+						<span id="db_poslatlon_text"></span>
+						<input type="hidden" id="db_poslatlon" name="db_poslatlon" value=""/>
+					</div>
+					<div >
+						<span class="form_text">&nbsp;&nbsp;新增日期 ：</span>
+						<input type="text" size="11"  maxlength="11" id="db_date" name="db_date" value="" class="form_box" readonly ></input>
+					</div>
+					<div >
+						<span class="form_text">&nbsp;&nbsp;新增照片 ：</span>
+						<input type="file" name="file[]" id="db_file"  multiple  accept=".png,.PNG,.jpg,.JPG,.jpge,.JPGE,.gif,.GIF">
+					</div>
+					<div id="img_list">
+					</div>
+				</div>
+				<div class="row">
+					<hr class="qt-hr"/>
+				</div>
+				<div class="row qt-eqh">
+					<div class="col-xs-12 text-right" style="padding-right: 15px;">
+						<button type="button" class="btn btn-success" id="loc-save-button">
+							<i class="fa fa-floppy-o " aria-hidden="true"></i>&nbsp; 儲存
+						</button>
+					</div>
+				</div>
+			</div>	
+			<div class="row"><BR>
+				<table style="width: 100%;">
+					<thead>
+						<tr>
+							<td class="text-left" colspan = '2'>【說明】</td>
+						</tr>
+						<tr>
+							<td class="text-left" >1.</td><td class="text-left" >此功能之坐標及照片，點選「儲存」後．皆是存放在行動裝置瀏覽器空間內。</td>
+						</tr>
+						<tr>
+							<td class="text-left" colspan = '2'>&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="text-left" >2.</td><td class="text-left" >照片以二進位檔轉換成 Base64 編碼文字(以文字方式儲存圖片)，以便儲存至瀏覽器內。</td>
+						</tr>
+					</thead>
+				</table>
+			</div>			
+		</div>
+	</div>
+
+	<div id="tabsdt-pointsave-win2">
+		<div class="panel-landdata" id="qt-landdata-ctn">
+			<table class="table-base stripe hover" style="width: 100%;">
+				<thead>
+					<tr>
+						<th class="base-title text-center" title='全選/取消全選'><input type='checkbox' id='all_chk' name='all_chk'  onClick="checkpoint('all_chk','cd_All')"  ></th>
+						<th class="base-title text-center" style="width: 58%;" >標題</th>
+						<th class="base-title text-center" style="width: 20%;">日期</th>
+						<th class="base-title text-center" style="width: 17%;">&nbsp;</th>
+					</tr>
+				</thead>
+				<tbody id="qt-pointsave-list"></tbody>
+			</table>
+			<div id="saveimg_list">
+			</div>
+			<table class="table-base stripe hover" id = "point_ctrl" style="width: 100%;">
+			  <tr >
+				<td class="text-center" >
+					<span>&nbsp;&nbsp;匯出格式 ：</span>
+					<input type="radio" name="qt-exp-pointfile" id="qt-exp-pointfile-all" value="all">&nbsp;<label for="qt-exp-pointfile-all" >kml+html</label>
+					<input type="radio" name="qt-exp-pointfile" id="qt-exp-pointfile-kml" value="kml">&nbsp;<label for="qt-exp-pointfile-kml" >kml</label>
+					<input type="radio" name="qt-exp-pointfile" id="qt-exp-pointfile-html" value="html" checked="">&nbsp;<label for="qt-exp-pointfile-html">html</label>
+					<div>
+					<span>&nbsp;&nbsp;圖片格式 ：</span>
+					<input type="radio" name="qt-exp-pointimg" id="qt-exp-pointimg-base64" value="base64">&nbsp;<label for="qt-exp-pointimg-base64" >BASE64</label>
+					<input type="radio" name="qt-exp-pointimg" id="qt-exp-pointimg-image" value="image" checked="">&nbsp;<label for="qt-exp-pointimg-image">路徑IMAGE</label>
+					</div>
+				</td>
+			  </tr>
+			  <tr class="js-qt-pointsave-row" colspan ='2'>
+				<td class="text-center" ><button type="button" class="btn btn-success" id="qt-save-submit"><i class="fa fa-floppy-o " aria-hidden="true"></i>&nbsp; 儲存</button>&nbsp;&nbsp;<button type="button" class="btn btn-danger" id="qt-del-submit"><i class="fa fa-trash-o" aria-hidden="true"></i>&nbsp; 刪除</button></td>
+			  </tr>
+			</table>
+			<BR>
+				<table >
+					<thead>
+						<tr>
+							<td class="text-left" colspan = '2'>【說明】</td>
+						</tr>
+						<tr>
+							<td class="text-left" >1.</td><td class="text-left" >全選或指定選取坐標，點選「儲存」後，將成果壓成壓縮檔（pointexp.zip）</td>
+						</tr>
+						<tr>
+							<td class="text-left" colspan = '2'>&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="text-left" >2.</td><td class="text-left" >上述壓縮檔可選擇KML或HTML格式，內含圖片可選擇以Base64編碼或相對檔案路徑呈現。</td>
+						</tr>
+						<tr>
+							<td class="text-left" colspan = '2'>&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="text-left" >3.</td><td class="text-left" >照片檔案名稱以「坐標標題+流水號」命名。</td>
+						</tr>
+					</thead>
+				</table>
+		</div>
+	</div>
+</div>
+<script>
+"use strict";
+$(function() {
+	$("#db_file").change(function () {
+		$('#img_list').empty();
+		for(var i=0; i<this.files.length; i++){
+			var file = this.files[i];
+			var reader = new FileReader();
+			reader.readAsDataURL(file);
+			var base64 = "";
+			reader.onload = function () {
+				var imgData = this.result;				
+				$('#img_list').append($("<img name='db_img' id='db_img_"+(i+1)+"'  class = 'img_list' width='80px' height='90px' ></img>").attr("src",imgData));
+			}
+		}
+	});
+	$("#tabs-pointsave").tabs();
+
+	$("#loc-save-button").on("click", function(event) {
+		if($("#db_title").val()===""){
+			qt.util.toast("請先輸入「標題」");
+			return;
+		}
+		if($("#db_poslatlon").val()===""){
+			qt.util.toast("請先新增「坐標」");
+			return;
+		}
+
+		var Today=new Date();
+		var seqno =Today.getFullYear()+ (Today.getMonth()+1) +Today.getDate()+ Today.getHours()+ Today.getMinutes()+Today.getSeconds();
+		var imgcut = $('#img_list img');
+		var imgno=1;
+		var mydata = {
+				"title": $("#db_title").val(),
+				"type": "001",
+				"date": $("#db_date").val(), 
+				"remark": $("#db_remark").val(), 
+				"poszoom":$("#db_poszoom").val(), 
+				"poslatlon": $("#db_poslatlon").val(), 
+				"baselayer": "", 
+				"overlay": "", 
+				"imgyn": imgcut.length > 0 ?'Y':'N', 
+				"id": seqno
+		};
+		
+		var savedata = {
+				"data": mydata,
+				"done" : function() {
+					$("#db_title").val('');
+					$("#db_remark").val('');
+					$("#db_poszoom").val('');
+					$("#db_poslatlon_text").text('');
+					$("#db_poslatlon").val('');
+					$("#db_date").val('');
+					qt.util.toast("新增完成");
+					
+					$('#img_list img').each(function() {
+						var imgData = {
+								"imgstr":$(this).attr("src").substring($(this).attr("src").indexOf(",") + 1),
+								"pointid": seqno,
+								"id": seqno+"-"+imgno,
+						};
+						var saveimgdata = {
+								"data": imgData,
+								"done" : function() {
+									$('#db_file').val('');
+									$('#img_list').empty();
+								},
+								"fail" : function() {
+									$('#db_file').val('');
+									$('#img_list').empty();
+								}
+						};
+						indexDbIns("pointimg", saveimgdata);
+						imgno++;
+					});
+
+				},
+				"fail" : function() {
+					$("#db_title").val('');
+					$("#db_remark").val('');
+					$("#db_poszoom").val('');
+					$("#db_poslatlon_text").text('');
+					$("#db_poslatlon").val('');
+					$("#db_date").val('');
+					qt.util.toast("新增失敗");
+				}
+		};
+		indexDbIns("mapstable", savedata);
+	});
+	$("#pointsave_qry").on("click", function(event) {
+		indexDbQry("mapstable", "001","qt-pointsave-list",
+			function() {
+				var count = 0;
+				$('#qt-pointsave-list .js-qt-pointsave-row').each(function() {
+					$('#point_ctrl').show();
+					count ++;
+				});
+				if (count===0){
+					$('#point_ctrl').hide();
+				}
+			}
+		);
+
+	});
+	$("#qt-point-gps-btn").on("click", function(event) {
+		toggleControl('none');
+		$(".qt-distance button").attr("title","開啟距離量測");
+		$(".qt-distance button").css("background-image","url(./mobile/images/distance-ico-h.svg)");
+		if(qt.util.isXs()) {
+//			qtPanelClose();
+		}
+		var options = {
+			enableHighAccuracy : true,
+			timeout : 5000,
+			maximumAge : 0
+		};
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(function(position) {
+				var dt = new Date();
+				var time = dt.getHours().toString() +dt.getMinutes().toString() +  dt.getSeconds().toString();
+//				$("#db_title").val('');
+//				$("#db_remark").val('');
+				$("#db_poszoom").val(18);
+				$("#db_poslatlon").val(position.coords.longitude.toFixed(6)+","+position.coords.latitude.toFixed(6));
+				$("#db_poslatlon_text").text(position.coords.longitude.toFixed(6)+","+position.coords.latitude.toFixed(6));
+				$("#db_date").val(dt.getFullYear()+ "/" + (dt.getMonth()+1) + "/" + dt.getDate());
+//				map.getView().setCenter(ol.proj.transform([parseFloat(position.coords.longitude), parseFloat(position.coords.latitude)], fromProjection, toProjection));
+//				map.getView().setZoom(18);
+			}, error, options);				
+		} else { 
+			alert("瀏覽器不支援定位功能");
+			console.log("Geolocation is not supported by this browser.");
+		}
+
+	});
+
+	$("#qt-point-save-btn").on("click", function(event) {
+		toggleControl('none');
+		$(".qt-distance button").attr("title","開啟距離量測");
+		$(".qt-distance button").css("background-image","url(./mobile/images/distance-ico-h.svg)");
+
+		regPointClick();
+		if(qt.util.isXs()) {
+			qtPanelClose();
+		}
+	});
+	$("#qt-del-submit").on("click", function(event) {
+		var ary_id="";
+		$('#qt-pointsave-list input:checkbox[name="cd_All"]').each(function(i) {
+			if($(this).prop("checked")){
+				var id =$(this).val();
+				var pos_id =$("#tr_"+id).attr("data-pos-id");
+				if (ary_id!="")
+					ary_id+=",";
+				ary_id+=pos_id;				
+			}
+		});	
+		if (ary_id==""){
+			qt.util.toast("請先勾選匯出點位");
+			return;
+		}
+		indexDbDelAll(ary_id);
+
+	});
+
+
+	$("#qt-save-submit").on("click", function(event) {
+		var ary_id="";
+		$('#qt-pointsave-list input:checkbox[name="cd_All"]').each(function(i) {
+			if($(this).prop("checked")){
+				var id =$(this).val();
+				var pos_id =$("#tr_"+id).attr("data-pos-id");
+				if (ary_id!="")
+					ary_id+=",";
+				ary_id+=pos_id;				
+			}
+		});	
+		if (ary_id==""){
+			qt.util.toast("請先勾選匯出點位");
+			return;
+		}
+		
+		var saveposvectors = new ol.source.Vector();
+
+//		console.log('ary_id: ' + ary_id); 
+		var tasks = [];
+		tasks.push( function(){
+			return indexDbQryImgByDesc('pointimg',ary_id);
+		});
+		return tasks.reduce(function(promiseChain, currentTask){
+			return promiseChain.then(currentTask );
+		}, Promise.resolve([])).then(function(arrayOfResults){
+			var desc = arrayOfResults;
+			var features = [];
+			var html_h = '<!DOCTYPE html><html><html lang="zh-TW"><head><meta charset="utf-8"><title>儲存結果列表</title></head><style>.search_item{font-family:Arial,"微軟正黑體";color:#5E7C52;text-align:left;height:40px;border-right-width:1px;border-right-style:solid;border-right-color:#E4E4E4;width:130px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#E4E4E4;padding-left:15px;font-weight:bold;font-size:14px}.search_border{border:1px solid#E4E4E4}.search_content{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#E4E4E4;padding-left:15px;text-align:left;font-family:"Times New Roman",Times,serif;font-size:14px;color:#666}.img_box{max-width:640px;max-height:480px;min-width:320px;min-height:480px}</style><body><table width="100%"border="0"cellpadding="0"cellspacing="0"class="search_border"><tbody>';
+
+			var html_b ="";
+
+			var html_f = '</tbody></table></body></html>';
+
+			var zip = new JSZip();
+			var zipimg ;
+
+			var pointfile =$('input[name="qt-exp-pointfile"]:checked').val();
+			var pointimg =$('input[name="qt-exp-pointimg"]:checked').val();
+			if (pointimg ==="image"){
+				 zipimg = zip.folder("images");
+			}
+			$('#qt-pointsave-list input:checkbox[name="cd_All"]').each(function(i) {
+				if($(this).prop("checked")){
+					var id =$(this).val();
+					var pos_id =$("#tr_"+id).attr("data-pos-id");
+					var name =$("#tr_"+id).attr("data-pos-title");
+					var lonlat = $("#tr_"+id).attr("data-pos").split(",");			
+					var date = $("#tr_"+id).attr("data-date");		
+					var remark = $("#tr_"+id).attr("data-remark");	
+					var imgyn = $("#tr_"+id).attr("data-imgyn");	
+					
+					
+					var imgs = "";
+					var imghtml = "";
+					if (imgyn=="Y"){
+						imghtml += '<table>';
+					}
+					var img_no = 1;
+//					console.log('desc: ' +desc.length); 
+
+					desc.forEach(function(img) {
+						if (img.posid == pos_id){
+							if (pointimg ==="image"){
+								zipimg.file(name+"-"+img_no+".png", img.imgstr, {base64: true});
+								imgs += "<img width='80px' height='90px'  class = 'img_list' src='./images/"+name+"-"+img_no+".png'>";
+								if (imgyn=="Y"){
+									imghtml+="<tr><td class='search_content'><img  src='./images/"+name+"-"+img_no+".png'  class=img_box></td></tr>";
+								}
+							}else{
+								imgs += "<img width='80px' height='90px'  class = 'img_list' src='data:image/jpeg;base64,"+img.imgstr+"' >";
+								if (imgyn=="Y"){
+									imghtml+="<tr><td class='search_content'><img  src='data:image/jpeg;base64,"+img.imgstr+"'  class=img_box></td></tr>";
+								}
+							}
+							img_no++;
+						}
+					});
+					if (imgyn=="Y"){
+						imghtml += '</table>';
+					}
+
+
+					html_b +='<tr><td class="search_item">標題</td><td class="search_content"width="77%">'+name+'</td></tr><tr><td class="search_item">日期</td><td class="search_content"width="77%">'+date+'</td></tr><tr><td class="search_item">照片</td><td class="search_content">'+imghtml+'</td></tr><tr><td class="search_item">坐標</td><td class="search_content"width="77%">'+$("#tr_"+id).attr("data-pos")+'</td></tr>'
+
+					var point = new ol.geom.Point(ol.proj.fromLonLat([parseFloat(lonlat[0]), parseFloat(lonlat[1])]));
+					var feature = new ol.Feature({
+						"pos_id": pos_id,
+						"name": name,
+						"description": '<![CDATA['+imgs+']]>',
+						"geometry" : point.transform(projection, 'EPSG:4326'),
+						"標題" :  name,
+						"新增日期" : date,
+						"備註" :  remark
+					});
+					features.push(feature);
+				}
+			});
+			  var node = new ol.format.KML().writeFeatures(features);
+			  if (pointfile ==="kml"){
+					zip.file("data.kml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"+_.unescape(node));
+			  }else if (pointfile ==="html"){
+					zip.file("data.html", _.unescape(html_h+html_b+html_f));
+			  }else{
+					zip.file("data.html", _.unescape(html_h+html_b+html_f));zip.file("data.html", _.unescape(html_h+html_b+html_f));
+					zip.file("data.kml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"+_.unescape(node));
+			  }
+                zip.generateAsync({
+                        type: "blob",  // 壓縮型別
+                        compression: "DEFLATE",      // STORE：預設不壓縮 DEFLATE：需要壓縮
+                        compressionOptions: {
+                            level: 9  // 壓縮等級1~9    1壓縮速度最快，9最優壓縮方式
+                            // [使用一張圖片測試之後1和9壓縮的力度不大，相差100K左右]
+                        }
+                    })
+                   .then(function (content) {
+                    // 壓縮的結果為blob型別
+//                    console.info(content);
+                    var link = document.createElement('a');
+                    link.download = 'pointexp.zip';
+                    var blob = new Blob([content], {type: 'application/zip'});
+                    link.href = window.URL.createObjectURL(blob);
+                    link.click();
+                });
+
+//			  var link = document.createElement('a');
+//			  link.download = 'data.html';
+//			  var blob = new Blob([_.unescape(html_h+html_b+html_f)], {type: 'text/plain'});
+//			  link.href = window.URL.createObjectURL(blob);
+//			  link.click();
+			
+		});	
+
+	});
+
+  
+	function error(err) { 
+		var message="";
+		if (err.code === 1) { // PERMISSION_DENIED
+			message = "Permission denied. - " + err.message;
+		} else if (err.code === 2) { //POSITION_UNAVAILABLE
+			message = "Make sure your network connection is active and " +
+                "try this again. - " + err.message;
+		} else if (err.code === 3) { //TIMEOUT
+			message = "A timeout ocurred; try again. - " + err.message;
+		}		
+		console.log('ERROR(' + err.code + '): ' + err.message); 
+		alert( ' 取得目前定位失敗  , ERROR(' + err.code + '): '  + message);
+	};
+});
+// 全選or反選
+function checkpoint(chk,checkboxname){
+	if($("#"+chk).prop("checked")){
+		$('#qt-pointsave-list input:checkbox[name="'+checkboxname+'"]').each(function(i) {
+			if(!$(this).prop("checked")){
+				$(this).prop("checked", true);
+			}
+		});
+	}
+	else{
+	    $('#qt-pointsave-list input:checkbox[name="'+checkboxname+'"]').each(function() {
+			if($(this).prop("checked")){
+				$(this).prop("checked", false);
+			}
+	    });      
+	} 
+}
+</script>
+
+		</div>
+		
+		<div class="sidePanel-ctn" id="qt-panel-ctn-10" data-id="10" data-pre="" data-next="" data-cur="">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<div class="qt-tabs" id="tabs-omlayer">
+	<ul class="js-tabs-omlayer-off">
+		<li><a href="#tabsdt-omlayer-win1" onclick=" omReset('');omPaperDestroy(''); ">MBTiles</a></li>
+		<li><a href="#tabsdt-omlayer-win2" onclick=" omReset(''); ">GeoPDF</a></li>
+	</ul>
+
+	
+	<div class="js-tabs-omlayer-off" id="tabsdt-omlayer-win1">
+		<div class="container-fluid panel-omlayer">
+			<div class="row" style="margin-top: .5em;margin-left: 0.2em;margin-right: 0.2em;">
+				<div class="om-qry-ctn">
+					<form id="om-qry-form" action="">
+						<table class="table-base nb" style="width: 100%;">
+							<tr>
+								<td colspan="2">
+									<div class="row" style="margin-left: 4em;">
+										<a href="javascript: void();" class="omap-btn-s js-omap-clickType" title="點選起點" data-type="OmapStart"></a>			
+										<a href="javascript: void();" class="omap-btn-e js-omap-clickType" title="點選終點" data-type="OmapEnd"></a>
+										<input type="hidden" id="qt-omap-clickType" value=""/>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="font-weight: bold;">圖層資料</td>
+							</tr>
+							<tr class="js-om-qry-range-wrap">
+								<td class="qt-right">框選範圍：</td>
+								<td id="om-qry-range">尚未框選</td>
+							</tr>
+<!-- 							<tr class="js-om-qry-range-wrap"> -->
+<!-- 								<td class="qt-right">中心點：</td> -->
+<!-- 								<td id="om-qry-center">尚未框選</td> -->
+<!-- 							</tr> -->
+							<tr>
+								<td class="qt-right" style="width:32%;"><span class="note-red">*&nbsp;</span>種類：</td>
+								<td>
+									<select class="js-om-qry-disabled custom-select form_select" id="om-qry-layer">
+										<option value="001" selected>臺灣通用電子地圖</option>
+										<option value="002">臺灣通用正射影像</option>
+									</select>
+								</td>
+							</tr>
+							<tr style="display: none;">
+								<td class="qt-right"><span class="note-red">*&nbsp;</span>最大層級：</td>
+								<td>
+									<input type="radio" class="js-om-qry-disabled" name="om-qry-zoom" id="om-qry-zoom-16" value="16"/>&nbsp;<label for="om-qry-zoom-16">16</label>&nbsp;
+									<input type="radio" class="js-om-qry-disabled" name="om-qry-zoom" id="om-qry-zoom-17" value="17"/>&nbsp;<label for="om-qry-zoom-17">17</label>&nbsp;
+									<input type="radio" class="js-om-qry-disabled" name="om-qry-zoom" id="om-qry-zoom-18" value="18"/>&nbsp;<label for="om-qry-zoom-18">18</label>&nbsp;
+									<input type="radio" class="js-om-qry-disabled" name="om-qry-zoom" id="om-qry-zoom-19" value="19" checked/>&nbsp;<label for="om-qry-zoom-19">19</label>
+								</td>
+							</tr>
+							<tr style="display: none;">
+								<td colspan="2" style="padding-left: 30px;">
+									當「最大層級」為19，含框選範圍的16~19層<br>
+									當「最大層級」為18，含框選範圍的16~18層<br>
+									...
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input type="radio" class="js-om-qry-disabled" name="om-qry-other" id="om-qry-other-001" value="001" checked/>&nbsp;<label for="om-qry-other-001">僅框選範圍之16-19層(不含6~15層)</label><br>
+									<input type="radio" class="js-om-qry-disabled" name="om-qry-other" id="om-qry-other-002" value="002"/>&nbsp;<label for="om-qry-other-002">含框選範圍的6~15層</label><br>
+									<input type="radio" class="js-om-qry-disabled" name="om-qry-other" id="om-qry-other-003" value="003"/>&nbsp;<label for="om-qry-other-003">含全臺灣地區的6~15層(約1.1GB)</label>
+									<BR><label for="om-qry-excEmptyTile" style="font-weight: bold;">臺灣地區的6-15層MBTiles可在下載專區下載</label>
+								</td>
+							</tr>
+							<tr style="display: none;">
+								<td colspan="2" style="padding-right: 0;">
+									<input type="checkbox" id="om-qry-excEmptyTile" value="true"/>&nbsp;<label for="om-qry-excEmptyTile">不要有空白圖磚(勾選後可節省空間，但會降低相容性)</label>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2" style="font-weight: bold;">申請人資料</td>
+							</tr>
+							<tr>
+								<td class="qt-right" ><span class="note-red">*&nbsp;</span>姓名：</td>
+								<td>
+									<input type="text" class="js-om-qry-disabled form_box" id="om-qry-name" value=""
+										maxlength="50" style="width: 170px;"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="qt-right"><span class="note-red">*&nbsp;</span>電話：</td>
+								<td>
+									<input type="text" class="js-om-qry-disabled form_box" id="om-qry-phone" value=""
+										maxlength="50" style="width: 150px;"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="qt-right"><span class="note-red">*&nbsp;</span>Email：</td>
+								<td>
+									<input type="text" id="om-qry-email" class="form_box" value=""
+										maxlength="100" style="width: 170px;"/><BR><label for="om-qry-excEmptyTile"><span class="note-red">請填寫正確，否則無法收到檔案網址</span></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="qt-right"><span class="note-red">*&nbsp;</span>用途：</td>
+								<td class="qt-center" style="padding: 5px 0;">
+									<textarea class="qt-box js-om-qry-disabled form_box" id="om-qry-rsUse" cols="25" rows="2"
+										maxlength="500" style="width: 98%;height: 50px;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="qt-right"><span class="note-red">*&nbsp;</span>使用人數：</td>
+								<td>
+									<input type="text" class="js-om-qry-disabled form_box" id="om-qry-qtyUse" value="1"
+										maxlength="3" style="width: 50px;"/>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="button" class="btn btn-success js-om-qry-disabled" id="om-qry-submit">
+										<i class="fa fa-floppy-o " aria-hidden="true"></i>&nbsp;申請離線地圖
+									</button>
+									<input type="hidden" id="om-qry-omid" value=""/>
+									<br><span style="margin-left: 2px;">國土測繪中心版權所有，請勿公開散布</span>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" id="om-qry-resend-wrap" style="display: none;">
+									<input type="button" class="btn-green" id="om-qry-resend" value="重新寄發"/>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="note-red qt-bold" id="om-qry-doc-1" style="display: none;">
+									系統已寄發申請通知至您的申請信箱，請點擊信件中的超連結完成申請。<br>
+									申請確認後，將寄發下載通知至您的申請信箱。<br>
+									若未收到申請通知，請修改信箱後點擊「重新寄發」按鈕。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="note-red qt-bold" id="om-qry-doc-2" style="display: none;">
+									系統已重新寄發申請通知至您的申請信箱，請點擊信件中的超連結完成申請。<br>
+									申請確認後，將寄發下載通知至您的申請信箱。<br>
+									若未收到申請通知，請修改信箱後點擊「重新寄發」按鈕。
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="note-red qt-bold" id="om-qry-doc-3" style="display: none;">
+									已經完成申請(信件中的超連結已經被點擊)，不可以再修改Email。<br>
+									申請確認後，將寄發下載通知至您的申請信箱。<br>
+									若未收到申請通知，請修改信箱後點擊「重新寄發」按鈕。
+								</td>
+							</tr>
+						</table>
+
+
+						<div id="qt-omap-sortList">
+							<div class="row qt-eqh js-omap-sortItem" style="margin-top: 1em;" data-tag="0">
+								<div class="col-xs-7">
+									<input type="hidden" class="js-omap-pos-xy-s" value=""/>
+								</div>
+							</div>
+							<div class="row qt-eqh js-omap-sortItem" style="margin-top: 1em;" data-tag="6">
+								<div class="col-xs-7">
+									<input type="hidden" class="js-omap-pos-xy-e" value=""/>
+								</div>
+
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="js-tabs-omlayer-off" id="tabsdt-omlayer-win2">
+		<div class="container-fluid panel-layer">
+			<div class="row" style="margin-top: .5em;">
+				<div class="om-qry-ctn2">
+					<form id="om-paper-form" action="" style="margin-left: 5px;margin-right: 5px;">
+						<table class="table-base nb" style="width: 100%;">
+							<tr>
+								<td colspan="2">
+									<select class="js-om-paper-disabled custom-select form_select" id="om-paper-page">
+										<option value="A4Land" selected>A4橫印</option>
+										<option value="A4">A4直印</option>
+										<option value="A3Land">A3橫印</option>
+										<option value="A3">A3直印</option>
+										<option value="A2Land">A2橫印</option>
+										<option value="A2">A2直印</option>
+										<option value="A1Land">A1橫印</option>
+										<option value="A1">A1直印</option>
+									</select>									
+									<a href="javascript: void(0);" id="om-paper-start" data-start="false">
+										按下-><img src="./images/frame_hov.png" id="om-qry-start-view"  id="om-paper-start-view" />&nbsp;開始點選離線地圖中心
+									</a>
+								</td>
+							</tr>
+							<tr class="js-om-paper-range-wrap">
+								<td class="qt-right" style="width:26%;">框選範圍：</td>
+								<td id="om-paper-range">尚未框選</td>
+							</tr>
+							<tr class="js-om-paper-range-wrap">
+								<td class="qt-right">圖磚階層：</td>
+								<td id="om-paper-levelDisplay">尚未點選</td>
+							</tr>							
+							<tr class="js-om-paper-range-wrap">
+								<td class="qt-right">中心點：</td>
+								<td id="om-paper-center">尚未點選</td>
+							</tr>
+							<tr>
+								<td colspan="2"  >
+								
+									<fieldset><legend style="margin-bottom: 0px;"><font color="#005BE7" size="3"><b>基本底圖</b></font></legend>
+												<table id="hor-zebra-a" summary="belong master" style="width: 100%;">
+													<tbody  >
+													<tr id="EMAP_B_id" layer="base" class="odd">
+													<td>
+													<input type="radio" name="om-paper-baselayer" id="om-paper-baselayer-001" value="https://wmts.nlsc.gov.tw/wmts/,EMAP5,通用版電子地圖"  checked>
+													<label for="om-paper-baselayer-001">臺灣通用電子地圖</label>
+													</td>
+													</tr>
+													<tr id="EMAP8_B_id" layer="base" class="odd">
+													<td>
+													<input type="radio" name="om-paper-baselayer" id="om-paper-baselayer-002" value="https://wmts.nlsc.gov.tw/wmts/,EMAP8,臺灣通用電子地圖英文版"  >
+													<label for="om-paper-baselayer-002">臺灣通用電子地圖英文版</label>
+													</td>
+													</tr>
+													<tr id="PHOTO_MIX_B_id" layer="base" class="odd">
+													<td>
+													<input type="radio" name="om-paper-baselayer" id="om-paper-baselayer-003" value="https://wmts.nlsc.gov.tw/wmts/,PHOTO_MIX,正射影像(航照混合)"  >
+													<label for="om-paper-baselayer-003">正射影像(航照混合)</label>
+													</td>
+													</tr>
+													</tbody>
+												</table>
+									</fieldset>								
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" id = "om-paper-overlay-td"  >
+									<fieldset><legend style="margin-bottom: 0px;"><font color="#FF0000" size="3"><b>額外圖層</b></font></legend>
+												<table id="hor-zebra-a" summary="belong master" style="width: 100%;">
+													<tbody id = "om-paper-overlay" >
+														<tr id="LUIMAP_id" layer="LUIMAP" class="odd"><td>
+														<input name="om-paper-overlay" type="checkbox" id="LUIMAP_id" value="https://wmts.nlsc.gov.tw/wmts,LUIMAP,國土利用調查成果圖-總覽"  >
+														<label for="LUIMAP_id">國土利用調查成果圖-總覽</label> 
+														</td>
+														</tr>
+													</tbody>
+												</table>
+									</fieldset>								
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="font-weight: bold;">申請人資料</td>
+							</tr>
+							<tr>
+								<td class="qt-right"><span class="note-red">*&nbsp;</span>姓名：</td>
+								<td>
+									<input type="text" class="js-om-paper-disabled form_box" id="om-paper-name" value=""
+										maxlength="50" style="width: 200px;"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="qt-right"><span class="note-red">*&nbsp;</span>電話：</td>
+								<td>
+									<input type="text" class="js-om-paper-disabled form_box" id="om-paper-phone" value=""
+										maxlength="50" style="width: 200px;"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="qt-right"><span class="note-red">*&nbsp;</span>Email：</td>
+								<td>
+									<input type="text" id="om-paper-email" value="" maxlength="100" style="width:200px;" class="js-om-paper-disabled form_box" />
+									<BR><label for="om-qry-excEmptyTile"><span class="note-red">請填寫正確，否則無法收到檔案網址</span></label>
+								</td>
+							</tr>
+							<tr>
+								<td class="qt-right"><span class="note-red">*&nbsp;</span>用途：</td>
+								<td class="qt-center" style="padding: 5px 0;">
+									<textarea class="qt-box js-om-paper-disabled form_box" id="om-paper-rsUse" cols="30" rows="2"
+										maxlength="500" style="width: 98%;height: 50px;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="button" class="btn btn-success js-om-paper-disabled" id="om-paper-submit">
+										<i class="fa fa-floppy-o " aria-hidden="true"></i>&nbsp;申請離線地圖
+									</button>
+									<input type="hidden" id="om-paper-omid" value=""/>
+									<input type="hidden" id="om-paper-calCenterX" value="">
+									<input type="hidden" id="om-paper-calCenterY" value="">
+									<input type="hidden" id="om-paper-level-hidden" value="">
+									<input type="hidden" id="om-paper-minx-hidden" value="">
+									<input type="hidden" id="om-paper-miny-hidden" value="">
+									<input type="hidden" id="om-paper-maxx-hidden" value="">
+									<input type="hidden" id="om-paper-maxy-hidden" value="">
+									<br><span style="margin-left: 2px;">國土測繪中心版權所有，請勿公開散布</span>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+"use strict";
+$(function() {
+	$("#tabs-omlayer").tabs();
+	// 點選起點、目的地、經過點
+	$(".js-omap-clickType").on("click", function(event) {
+		event.preventDefault();
+		var clickType = $(this).attr("data-type");
+		if("OmapStart" === clickType) {
+			$("#om-qry-range").text("尚未框選");
+			$("#om-qry-center").text("尚未框選");
+			$("#qt-omap-sortList .js-omap-pos-xy-s").val("");
+			qtOmapClrPos("0");
+		} else if("OmapEnd" === clickType) {
+			$("#om-qry-range").text("尚未框選");
+			$("#om-qry-center").text("尚未框選");
+			$("#qt-omap-sortList .js-omap-pos-xy-e").val("");
+			qtOmapClrPos("6");
+		} else if($(this).hasClass("disabled")) {
+			return;
+		}
+		regOmapClick(clickType);
+		// 調整網頁布局
+		chgViewSize();
+		
+		if(qt.util.isXs()) {
+			qtPanelClose();
+		}
+	});
+	
+	// 點選離線地圖範圍
+	$("#om-paper-start").on("click", function(event) {
+		event.preventDefault();
+		omPaperToggle('');
+	});
+
+	// 申請
+	$("#om-qry-submit").on("click", function(event) {
+		event.preventDefault();
+		var omap =false;
+		var features =routeVec.getSource().getFeatures();
+		for (var i = 0, len = features.length; i < len; i++) {
+			var f_id = features[i].get("id");
+			if (f_id ==="離線地圖-omap"){
+				omap =true;
+			}
+		}
+
+		if(!omap) {
+			qt.util.toast("請先框選範圍");
+			return;
+		}
+// 		if(!qt.ctrl.Offmap._instance._chkCalResult()) {
+// 			return;
+// 		}
+		if("" === $("#om-qry-name").val().trim()) {
+			qt.util.toast("請輸入姓名");
+			$("#om-qry-name").get(0).focus();
+			return;
+		}
+		if("" === $("#om-qry-phone").val().trim()) {
+			qt.util.toast("請輸入電話");
+			$("#om-qry-phone").get(0).focus();
+			return;
+		}
+		if("" === $("#om-qry-email").val().trim()) {
+			qt.util.toast("請輸入Email");
+			$("#om-qry-email").get(0).focus();
+			return;
+		}
+		if (!CheckEmail($('#om-qry-email').val())) {
+			qt.util.toast("電子郵件有誤！！\n\r 1.請檢查電子郵件格式是否正確。");
+			return $('#om-qry-email').focus(); 
+		}
+		if("" === $("#om-qry-rsUse").val().trim()) {
+			qt.util.toast("請輸入用途");
+			$("#om-qry-rsUse").get(0).focus();
+			return;
+		}
+		if("" === $("#om-qry-qtyUse").val().trim() 
+				|| isNaN($("#om-qry-qtyUse").val())
+				|| parseFloat($("#om-qry-qtyUse").val().trim()) <= 0) {
+			qt.util.toast("請輸入有效的使用人數");
+			$("#om-qry-qtyUse").get(0).focus();
+			return;
+		} else {
+			$("#om-qry-qtyUse").val(Math.ceil(parseFloat($("#om-qry-qtyUse").val().trim())));
+		}
+		
+		var calResult = Offmap_calResult;
+		if(null == Offmap_calResult.zoom || Offmap_calResult.zoom < 16) {
+			showMessage("框選範圍太大，請重新框選", "msg_panel", 3000);
+			return false;
+		}
+		var mydata = {
+				"om.name" : $("#om-qry-name").val().trim(),
+				"om.phone" : $("#om-qry-phone").val().trim(),
+				"om.email" : $("#om-qry-email").val().trim(),
+				"om.rsUse" : $("#om-qry-rsUse").val().trim(),
+				"om.qtyUse" : $("#om-qry-qtyUse").val().trim(),
+				"om.layerType" : $("#om-qry-layer").val(),
+				"om.layerZoom" : $('input[name="om-qry-zoom"]:checked').val(),
+				"om.layerOther" : $('input[name="om-qry-other"]:checked').val(),
+				"om.excEmptyTile" : $("#om-qry-excEmptyTile").prop("checked") ? "true" : "false",
+				"om.centerLon" : calResult.center[0].toFixed(6),
+				"om.centerLat" : calResult.center[1].toFixed(6),
+				"om.width" : calResult.width,
+				"om.height" : calResult.height
+		};
+		var extent84 = ol.proj.transformExtent(calResult.extent, qt.map.PROJ_3857, qt.map.PROJ_4326);
+		mydata["om.blLon"] = extent84[0].toFixed(6);
+		mydata["om.blLat"] = extent84[1].toFixed(6);
+		mydata["om.trLon"] = extent84[2].toFixed(6);
+		mydata["om.trLat"] = extent84[3].toFixed(6);
+		var zoom = parseInt(mydata["om.layerZoom"]);
+		mydata["om.qtyPic"] = calResult.qtyPic["" + zoom];
+		var tcbl = tileGrid.getTileCoordForCoordAndZ(ol.extent.getBottomLeft(calResult.extent), zoom);
+		var tctr = tileGrid.getTileCoordForCoordAndZ(ol.extent.getTopRight(calResult.extent), zoom);
+		mydata["om.blX"] = tcbl[1];
+		mydata["om.blY"] = tcbl[2];
+		mydata["om.trX"] = tctr[1];
+		mydata["om.trY"] = tctr[2];
+		$.ajax({
+			type : "POST",
+			url : "./pro/setToken.jsp",  //取 token session ID
+			async : true,
+			error : function(xhr) {
+				console.log("get token fail.");
+			},
+			success : function(data) { //取 token session ID成功，送出取資料
+				var strutsToken = $($.parseHTML(data)).filter("input[name='token']").val();
+				mydata["struts.token.name"] ="token";
+				mydata["token"] =strutsToken;
+
+				qt.ajax.getJson({
+					"url" : "omClient_applyOm.action",
+					"data" : mydata,
+					"done" : function(json) {
+						qt.util.toast(json.message);
+						if("ok" === json.code) {
+							$("#om-qry-omid").val(json.id);
+							
+							$("#om-qry-doc-1").show();
+							$("#om-qry-resend-wrap").css("display", "table-cell");
+							
+							$(".js-om-qry-disabled").prop("disabled", true);
+						}
+					}
+				});
+			}
+		});
+
+	});
+	
+	// 申請
+	$("#om-paper-submit").on("click", function(event) {
+		event.preventDefault();
+		if(!qt.paper.Offmap._instance) {
+			qt.util.toast("請先框選範圍");
+			return;
+		}
+		if("" === $("#om-paper-name").val().trim()) {
+			qt.util.toast("請輸入姓名");
+			$("#om-paper-name").get(0).focus();
+			return;
+		}
+		if("" === $("#om-paper-phone").val().trim()) {
+			qt.util.toast("請輸入電話");
+			$("#om-paper-phone").get(0).focus();
+			return;
+		}
+		if("" === $("#om-paper-email").val().trim()) {
+			qt.util.toast("請輸入Email");
+			$("#om-paper-email").get(0).focus();
+			return;
+		}
+
+		if (!CheckEmail($('#om-paper-email').val())) {
+			alert("電子郵件有誤！！\n\r 1.請檢查電子郵件格式是否正確。");
+			return $('#om-paper-email').focus(); 
+		}
+
+		if("" === $("#om-paper-rsUse").val().trim()) {
+			qt.util.toast("請輸入用途");
+			$("#om-paper-rsUse").get(0).focus();
+			return;
+		}
+		var cbxVehicle = new Array();
+		var overlay_str = "";
+		$('input:checkbox:checked[name="om-paper-overlay"]').each(function(i) { 
+			cbxVehicle[i] = this.value; 
+			});
+		overlay_str = cbxVehicle.join("&");
+
+		
+		var blayer = $('input[name=om-paper-baselayer]:checked').val();	
+		var mydata = {
+				"om.name" : $("#om-paper-name").val().trim(),
+				"om.phone" : $("#om-paper-phone").val().trim(),
+				"om.email" : $("#om-paper-email").val().trim(),
+				"om.rsUse" : $("#om-paper-rsUse").val().trim(),
+				"om.blayer" : blayer,
+				"om.overlay" : overlay_str,
+				"om.layerZoom":$("#om-paper-level-hidden").val(),
+				"om.paperSize":$("select#om-paper-page option:checked").val(),
+		};
+		mydata["om.blLon"] = $("#om-paper-minx-hidden").val();
+		mydata["om.blLat"] = $("#om-paper-miny-hidden").val();
+		mydata["om.trLon"] = $("#om-paper-maxx-hidden").val();
+		mydata["om.trLat"] = $("#om-paper-maxy-hidden").val();
+// 		console.log( mydata);		
+		$.ajax({
+			type : "POST",
+			url : "./pro/setToken.jsp",  //取 token session ID
+			async : true,
+			error : function(xhr) {
+				console.log("get token fail.");
+			},
+			success : function(data) { //取 token session ID成功，送出取資料
+				var strutsToken = $($.parseHTML(data)).filter("input[name='token']").val();
+				mydata["struts.token.name"] ="token";
+				mydata["token"] =strutsToken;
+				qt.ajax.getJson({
+					"url" : "omClient_applyGeoPdf.action",
+					"data" : mydata,
+					"done" : function(json) {
+						qt.util.toast(json.message);
+						if("ok" === json.code) {
+							$("#om-paper-omid").val(json.id);									
+							$(".js-om-paper-disabled").prop("disabled", true);
+						}
+					}
+				});
+			}
+		});
+
+	});
+
+
+	// 重新寄發
+	$("#om-qry-resend").on("click", function(event) {
+		event.preventDefault();
+		if("" === $("#om-qry-omid").val()) {
+			qt.util.toast("請先申請離線地圖");
+			return;
+		}
+		if("" === $("#om-qry-email").val().trim()) {
+			qt.util.toast("請輸入Email");
+			$("#om-qry-email").get(0).focus();
+			return;
+		}
+		
+		var mydata = {
+				"om.omid" : $("#om-qry-omid").val(),
+				"om.email" : $("#om-qry-email").val().trim()
+		};
+		$.ajax({
+			type : "POST",
+			url : "./pro/setToken.jsp",  //取 token session ID
+			async : true,
+			error : function(xhr) {
+				console.log("get token fail.");
+			},
+			success : function(data) { //取 token session ID成功，送出取資料
+				var strutsToken = $($.parseHTML(data)).filter("input[name='token']").val();
+				mydata["struts.token.name"] ="token";
+				mydata["token"] =strutsToken;
+				qt.ajax.getJson({
+					"url" : "omClient_resendConfirm.action",
+					"data" : mydata,
+					"done" : function(json) {
+						qt.util.toast(json.message);
+						if("ok" === json.code) {
+							$("#om-qry-doc-1").hide();
+							$("#om-qry-doc-2").show();
+						} else if("repeat" === json.code) {
+							$("#om-qry-doc-1").hide();
+							$("#om-qry-doc-2").hide();
+							$("#om-qry-doc-3").show();
+							$("#om-qry-email").prop("disabled", true);
+							$("#om-qry-resend").prop("disabled", true);
+						}
+					}
+				});
+			}
+		});
+	});
+
+});
+
+/**
+ * 重設頁面。
+ */
+function omReset(no) {
+	omQryDestroy(no);
+	qtOmapClrPos(); 
+// 	omPaperDestroy();
+	
+	// 下載離線地圖設定
+	qt.ajax.getJson({
+		"url" : "omClient_getCfg.action",
+		"quiet" : true,
+		"done" : function(json) {
+			if("ok" === json.code) {
+//				qt.ctrl.Offmap._QTY_PIC_MAX = json.value;
+			}
+			if ("Y"===json.soalogin){
+				$("#om-qry-name").val(json.username);
+				$("#om-qry-email").val(json.email);
+				$("#om-qry-name").prop("disabled", true);
+				$("#om-qry-email").prop("disabled", true);
+				
+				$("#om-paper-name").val(json.username);
+				$("#om-paper-email").val(json.email);
+				if (json.tel!==""){
+					$("#om-qry-phone").val(json.tel);
+					$("#om-paper-phone").val(json.tel);
+					$("#om-qry-phone").prop("disabled", true);
+					$("#om-paper-phone").prop("disabled", true);
+				}
+				$("#om-paper-name").prop("disabled", true);
+				$("#om-paper-email").prop("disabled", true);
+			}
+		}
+	});
+}
+
+/**
+ * 銷毀離線地圖功能。
+ */
+function omQryDestroy(no) {
+	$("#om-qry-resend"+no).prop("disabled", false);
+	$("#om-qry-resend-wrap").css("display", "none");
+	$("#om-qry-doc-1").hide();
+	$("#om-qry-doc-2").hide();
+	$("#om-qry-doc-3").hide();
+	
+	// 重設開始按鈕
+	$("#om-qry-start"+no).attr("data-start", "false");
+	$("#om-qry-start-view"+no).attr("src", "./images/frame_hov.png");
+	
+	// 重設表單
+	$(".js-om-qry-disabled").prop("disabled", false);
+	$("#om-qry-email"+no).prop("disabled", false);
+	$("#om-qry-form"+no).get(0).reset();
+	$(".js-om-qry-range-wrap").css("display", "none");
+	$("#om-qry-range"+no).empty().html("尚未框選");
+	$("#om-qry-center"+no).empty().html("尚未框選");
+
+}
+
+/**
+ * 切換離線地圖功能(啟用、停用)。
+ */
+function omPaperToggle(no) {
+	if("true" === $("#om-paper-start"+no).attr("data-start")) {
+		omPaperStop(no);
+		omPaperDestroy(no);
+	} else {
+		omPaperStart(no);
+	}
+}
+/**
+ * 啟用離線地圖功能。
+ */
+function omPaperStart(no) {
+	$("#om-paper-resend").prop("disabled", false);
+	$("#om-paper-resend-wrap").css("display", "none");
+	$("#om-paper-doc-1").hide();
+	$("#om-paper-doc-2").hide();
+	$("#om-paper-doc-3").hide();
+	
+	$("#om-paper-start"+no).attr("data-start", "true");
+	$("#om-paper-start-view"+no).attr("src", "./images/frame.png");
+	
+//	$(".js-om-paper-disabled").prop("disabled", false);
+	$("#om-paper-email"+no).prop("disabled", false);
+	$("#om-paper-zoom-19").prop("checked", true);
+	$("#om-paper-other-001").prop("checked", true);
+	$("#om-paper-omid"+no).val("");
+	$(".js-om-paper-range-wrap").css("display", "none");
+	$("#om-paper-range"+no).empty().html("尚未框選");
+	$("#om-paper-center"+no).empty().html("尚未框選");
+	qt.paper.Offmap.start(map,no);
+		
+}
+
+/**
+ * 停用離線地圖功能。
+ */
+function omPaperStop(no) {
+	$("#om-paper-start"+no).attr("data-start", "false");
+	$("#om-paper-start-view"+no).attr("src", "./images/frame_hov.png");
+	
+	qt.paper.Offmap.stop(no);
+}
+
+
+/**
+ * 銷毀離線地圖功能。
+ */
+function omPaperDestroy(no) {
+	$("#om-paper-resend"+no).prop("disabled", false);
+	$("#om-paper-resend-wrap").css("display", "none");
+	$("#om-paper-doc-1").hide();
+	$("#om-paper-doc-2").hide();
+	$("#om-paper-doc-3").hide();
+	
+	// 重設開始按鈕
+	$("#om-paper-start"+no).attr("data-start", "false");
+	$("#om-paper-start-view"+no).attr("src", "./images/frame_hov.png");
+	
+	// 重設表單
+//	$(".js-om-paper-disabled").prop("disabled", false);
+	$("#om-paper-email"+no).prop("disabled", false);
+// 	$("#om-paper-form"+no).get(0).reset();
+	$(".js-om-paper-range-wrap").css("display", "none");
+	$("#om-paper-range"+no).empty().html("尚未點選");
+	$("#om-paper-center"+no).empty().html("尚未點選");
+	
+	qt.paper.Offmap.destroy();
+}
+
+</script>
+
+		</div>
+	</div>
+	<div class="text-center sidePanel-collapse-wrap">
+
+		<a href="javascript: void(0);" class="sidePanel-collapse" id="qt-panel-collapse"
+				aria-label="收合側邊面板" title="收合側邊面板" style="display: none;">
+			&nbsp;<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>&nbsp;
+		</a>
+	</div>
+</div>
+
+<script>
+"use strict";
+$(function() {
+	// 收合、展開側邊面板
+	$("#qt-panel-collapse").on("click", function(event) {
+		event.preventDefault();
+		qtPanelToggle();
+	});
+	
+	// 關閉側邊面板
+	$("#qt-panel-close").on("click", function(event) {
+		event.preventDefault();
+		qtPanelHide();
+	});
+	
+	// 返回
+	$("#qt-panel-back").on("click", function(event) {
+		event.preventDefault();
+		qtPanelBack();
+	});
+
+	// 關閉側邊面板
+	$("#qt-panel-menu").on("click", function(event) {
+		event.preventDefault();
+		qtPanelHide();
+		setTimeout(function() {
+					$('#dropdown_menu_list').addClass('open');
+		}, 500);
+	});
+	
+	$(document).on("tabscreate", ".tab-qryLand", function() {
+	    $(this).find(".ui-tabs-nav .ui-tabs-anchor").css({
+	        "padding": "3px 6px",
+	        "font-size": "14px",
+	        "white-space": "nowrap"
+	    });
+	});
+
+});
+</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+
+
+<div class="modal fade modal-layer" id="modal-layer" tabindex="-1" role="dialog" aria-labelledby="modal-layer-label" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal-layer-label">圖層列表
+				</h4>
+			</div>
+			<div class="modal-body" id="modal-layer-body"></div>
+			<div class="modal-footer">
+<button type="button" class="btn btn-primary" id="allLayerBtn">圖層搜尋</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal fade modal-layer" id="modal-mylayer" tabindex="-1" role="dialog" aria-labelledby="modal-mylayer-label" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal-mylayer-label">所有圖層列表
+				</h4>
+			</div>
+
+			<div class="modal-body" id="modal-mylayer-body">
+				<div class="col-xs-12" style="float: unset;margin-bottom: 6px;">
+					<span class="form_text">關鍵字:</span>
+					<input type="text" size="8"  maxlength="10" id="search_mylayer" value="" class="form_box" placeholder="可輸任意字"  ></input>
+					<button type="button" class="btn btn-danger" onclick="search_mylayer('refresh')" >
+						<i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;
+					</button>
+					<button type="button" class="btn btn-success"  onclick="search_mylayer('search')">
+						<i class="fa fa-search" aria-hidden="true"></i>&nbsp;
+					</button>
+				</div>
+				<div class="col-xs-2" style="float: unset;margin-bottom: 6px;">
+					<button type="button" class="btn btn-warning" id="qt-mylayer-save"><i class="fa fa-floppy-o " aria-hidden="true"></i>&nbsp;儲存設定</button>
+				</div>
+
+				<div id="modal-mylayer-list">
+
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-layer" id="modal-allLayer" tabindex="-1" role="dialog" aria-labelledby="modal-allLayer-label" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal-allLayer-label">所有圖層列表
+				</h4>
+			</div>
+
+			<div class="modal-body" id="modal-allLayer-body">
+				<div class="col-xs-12" style="float: unset;margin-bottom: 6px;">
+					<span class="form_text">關鍵字:</span>
+					<input type="text" size="35"  maxlength="35" id="search_allLayer" value="" 
+					class="form_box" placeholder="可輸任意字"  ></input>
+					<button type="button" class="btn btn-danger" title="重新整理"
+					onclick="search_allLayer('refresh');resetUIState(isRecording);resetEecordingsList()" >
+						<i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;
+					</button>
+					<button type="button" class="btn btn-success"  title="搜尋"
+						onclick="search_allLayer('search')">
+						<i class="fa fa-search" aria-hidden="true"></i>&nbsp;
+					</button>
+		            					
+				</div>
+<ul id="recordingslist"></ul>  <!-- 撥放錄音的地方 -->
+				<div id="modal-allLayer-list">
+
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="modal fade modal-layer-info" id="modal-layer-info" tabindex="-1" role="dialog" aria-labelledby="modal-layer-info-label" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal-layer-info-label">圖資說明</h4>
+			</div>
+			<div class="modal-body" id="modal-layer-info-body"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="magicToken" value="960827da-36f4-4e2e-8e6a-6b2f89b26635"/>
+
+<div class="modal fade modal-layer-switch" id="modal-layer-switch" tabindex="-1" role="dialog" aria-labelledby="modal-layer-switch-label" aria-hidden="true">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal-layer-switch-label">底圖切換</h4>
+			</div>
+			<div class="modal-body" id="modal-layer-switch-body"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade modal-layer-switch" id="modal-layer2-switch" tabindex="-1" role="dialog" aria-labelledby="modal-layer-switch-label" aria-hidden="true">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal-layer2-switch-label">底圖切換</h4>
+			</div>
+			<div class="modal-body" id="modal-layer2-switch-body"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(function() {
+	// MAP底圖切換
+	$("#modal-layer-switch-body").on("change", "input[name='layer-switch']", function(event) {
+		event.preventDefault();
+		var name = this.value;
+		chgBaseLayer(name + "_B", name, "1");
+		$("#modal-layer-switch").modal("hide");
+	});
+	// MAP2底圖切換
+	$("#modal-layer2-switch-body").on("change", "input[name='layer2-switch']", function(event) {
+		event.preventDefault();
+		var name = this.value;
+		chgBaseLayer(name + "_B", name, "2");
+		$("#modal-layer2-switch").modal("hide");
+	});
+	
+	// 預載切換選項
+	setTimeout(function() {
+		qt.ajax.getHtml({
+			"target" : "qt-temp",
+			"url" : home_titel+"/pro/001_layer_mobile.html",
+			"quiet" : true,
+			"done" : function() {
+				qtLayerParsingSwitch();
+			}
+		});
+	}, 1000);
+});
+</script>
+
+
+
+<div class="modal fade modal-system-info" id="modal-system-info" tabindex="-1" role="dialog" aria-labelledby="modal-system-info-label" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal-system-info-label">提醒您</h4>
+			</div>
+			<div class="modal-body" id="modal-layer-info-body">
+		　　<FONT COLOR="#0066FF">本網站內容僅供參考，不能作為法律證明文件。</FONT><br> <br> 
+		　　本網站提供之各種圖資倘有疑義，請逕洽各該圖資產製單位，詳見各圖資說明。各種圖資套疊結果僅供參考，實際位置應以實地測量成果為準。<br> <br> 
+		　　本網站提供瀏覽查詢之臺灣通用電子地圖、國土利用現況調查成果及各比例尺地形圖，為地貌現況的表達，不具法律效力，不涉及既成道路、現有巷道或土地權利實際界址認定。<br> <br> 
+		　　本網站查詢之地籍圖，僅可作為土地位置之示意，實際圖形應以地政事務所核發之謄本為準，土地界址應以各地政事務所鑑界為準。<br> <br> 
+		　　本網站查詢之門牌係取自戶政門牌，因原始坐標誤差及坐標轉換誤差，僅供套疊參考。
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-dmaps-sysinfo" id="modal-dmaps-sysinfo" tabindex="-1" role="dialog" aria-labelledby="modal-dmaps-sysinfo-label" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal-dmaps-sysinfo-label">地籍圖使用資訊</h4>
+			</div>
+			<div class="modal-body" id="modal-dmaps-sysinfo-body">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" id="qt-dmaps-open">
+					開啟
+				</button>
+				&nbsp;
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--  
+<div class="modal fade modal-landqry-sysinfo" id="modal-landqry-sysinfo" tabindex="-1" role="dialog" aria-labelledby="modal-landqry-sysinfo-label" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="landqry-sysinfo-label">地籍圖使用資訊</h4>
+			</div>
+			<div class="modal-body" id="modal-landqry-sysinfo-body">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" id="qt-landqry-open">
+					開啟
+				</button>
+				&nbsp;
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+-->
+
+<div class="modal fade modal-history" id="modal-history" tabindex="-1" role="dialog" aria-labelledby="modal-history-label" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">歷年資訊</h4>
+			</div>
+			<div class="modal-body" id="modal-history-body">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" >
+"use strict";
+
+var audioContext;
+var recorder;
+var analyser;
+var audioURL;
+var isRecording = false; // 錄音狀態
+var silenceTimer;
+var maxRecordingTimer;
+var silenceThreshold = 0.05;
+var silenceTimeout = 2000;  // 2 秒無聲
+var maxRecordingLength = 6000;  // 最長錄音時間 10 秒
+var silenceStartTime = null;
+
+$(function() {
+	$("#qt-dmaps-open").on("click", function(event) {
+		event.preventDefault();
+		$("#land_layer").val("Y");
+		var dmaps_yn =false;
+		map.getLayers().forEach(function (lyr) {
+			if (lyr.get('type')!="base"){
+				if ("DMAPS"==lyr.get('name')){
+					dmaps_yn = lyr.getVisible();
+				}
+			}
+		});	
+		if (!dmaps_yn){
+			setOverlay_layer('DMAPS');
+		}
+		$("#modal-dmaps-sysinfo").modal("hide");
+	});
+
+	$('#modal-dmaps-sysinfo').on('show.bs.modal', function (event) {
+		if($.trim($("#modal-dmaps-sysinfo-body").text())== ""){
+			$("#modal-dmaps-sysinfo-body").html($("#DMAPS_doc").val()) ;
+		}
+	});
+	
+
+
+});
+
+
+
+$("#allLayerBtn").on("click", function(event) {
+	event.preventDefault();
+	get_allLayer_html();
+});
+
+// 開關錄音功能
+function toggleRecording(button) {
+    if (isRecording) {
+    	console.log('提前手動停止。');
+//         stopRecording();  // 如果正在錄音，則停止錄音
+    } else {
+        startRecording(button);  // 如果沒有錄音，則開始錄音
+    }
+}
+
+// 開始錄音
+function startRecording(button) {
+    console.log('開始錄音...');
+    document.getElementById('search_allLayer').value = ''; // 清除之前結果
+    resetUIState(true); // 鎖定 UI 狀態，顯示「辨識中..」
+
+    // 檢查 AudioContext 是否已經初始化，否則進行初始化
+    if (!audioContext) {
+        try {
+            audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        } catch (e) {
+            console.log("Web Audio API 不受支持");
+            resetUIState(false);
+            return;
+        }
+    }    
+    
+    // 清除所有計時器，防止觸發之前的定時器
+    clearTimers();
+    
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+            var input = audioContext.createMediaStreamSource(stream);
+
+            // 創建 AnalyserNode 並連接到輸入流
+            analyser = audioContext.createAnalyser();
+            analyser.fftSize = 2048;
+            input.connect(analyser);
+
+            // 創建 Recorder 實例並開始錄音
+            recorder = new Recorder(input);
+            recorder.record();
+            isRecording = true;  // 設定為正在錄音
+            toggleMicStatus(true);  // 顯示錄音狀態
+
+            // 設定自動停止錄音的計時器
+            maxRecordingTimer = setTimeout(stopRecording, maxRecordingLength);  // 最長錄音 10 秒
+            monitorVolume();  // 開始監測音量
+        }).catch(function (err) {
+            console.log("麥克風訪問錯誤: ", err);
+            resetUIState(false); // 如果發生錯誤，恢復UI狀態
+        });
+    } else {
+        alert("您的瀏覽器不支援音頻錄製功能。");
+        resetUIState(false); 
+    }
+}
+
+// 停止錄音
+function stopRecording() {
+    if (recorder && recorder.recording) {
+        recorder.stop();
+        isRecording = false;  // 設定為停止錄音
+        toggleMicStatus(false);  // 切換回麥克風靜止狀態
+        clearTimers();  // 清除所有計時器
+        console.log('錄音停止。');
+
+        uploadRecordingForSpeechRecognition();
+        recorder = null;
+//         recorder.clear();
+    }
+}
+
+// 音量監測，2 秒無聲停止錄音
+function monitorVolume() {
+    var bufferLength = analyser.fftSize;
+    var dataArray = new Uint8Array(bufferLength);
+
+    function checkVolume() {
+        analyser.getByteTimeDomainData(dataArray);
+        var isSilent = true;
+
+        // 判斷是否有聲音
+        for (var i = 0; i < bufferLength; i++) {
+            if (Math.abs(dataArray[i] - 128) / 128 > silenceThreshold) {
+                isSilent = false;
+                break;
+            }
+        }
+
+        if (isSilent) {
+            if (!silenceStartTime) {
+                silenceStartTime = Date.now();  // 記錄無聲的起始時間
+            } else if (Date.now() - silenceStartTime >= silenceTimeout) {
+                console.log('提前自動停止。');
+                stopRecording();  // 如果無聲超過 2 秒，停止錄音
+                return; // 避免重複觸發 stopRecording()
+            }
+        } else {
+            silenceStartTime = null;  // 有聲音時重置無聲計時
+        }
+
+        // 持續檢查音量
+        if (recorder && recorder.recording) {
+            requestAnimationFrame(checkVolume);
+        }
+    }
+
+    requestAnimationFrame(checkVolume);
+}
+
+//修改上傳成功和失敗後的處理
+function uploadRecordingForSpeechRecognition() {
+    if (!recorder) {
+        return; // 如果 recorder 未初始化，則直接返回
+    }
+
+    recorder && recorder.exportWAV(function (blob) {
+        var xhr = new XMLHttpRequest();
+        var formData = new FormData();
+        formData.append("audio_data", blob, (new Date().toISOString()).replaceAll(':', '') + '.wav');
+        
+        xhr.open("POST", "https://map.quantasoft.com.tw:8080/zhTW/ServletVoice", true);
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                var resultText = parseResponse(xhr.responseText);
+                document.getElementById('search_allLayer').value = resultText;
+                console.log("結果: " + (resultText ? resultText : "空的回應"));
+
+                // 創建播放按鈕
+                audioURL = URL.createObjectURL(blob);
+                createPlayButton(audioURL);
+            } else {
+                console.log('上傳文件錯誤: ', xhr.statusText);
+            }
+            // 完成後恢復按鈕和輸入框狀態
+            resetUIState(false);
+        };
+        xhr.onerror = function() {
+            console.log('上傳發生錯誤');
+            resetUIState(false); // 發生錯誤時也恢復 UI 狀態
+        };
+        xhr.send(formData);
+    });
+}
+
+
+function resetUIState(isRecording) {
+    var searchLayerInput = document.getElementById('search_allLayer');
+    var micButton = document.querySelector("button.btn-info"); // 錄音按鈕
+
+    if (isRecording) {
+        searchLayerInput.disabled = true; // 禁用輸入框
+        searchLayerInput.placeholder = '辨識中...'; // 顯示提示文字
+        micButton.disabled = true; // 禁用按鈕
+        toggleMicStatus(true); // 顯示錄音中狀態
+    } else {
+        searchLayerInput.disabled = false; // 解鎖輸入框
+        searchLayerInput.placeholder = ''; // 清除提示文字
+        micButton.disabled = false; // 解鎖按鈕
+        toggleMicStatus(false); // 顯示靜止狀態
+    }
+}
+
+function resetEecordingsList() {
+	// 清除播放列表
+	var recordingsList = document.getElementById('recordingslist'); // 播放錄音的列表
+	recordingsList.innerHTML = ''; // 清除之前的播放按鈕
+}
+
+function createPlayButton(audioURL) {
+    var recordingsList = document.getElementById('recordingslist');
+    recordingsList.innerHTML = '';  // 清除之前的播放按鈕
+    var li = document.createElement('li');
+    var audio = document.createElement('audio');
+    audio.controls = true;
+    audio.src = audioURL;
+    li.appendChild(audio);
+    recordingsList.appendChild(li);
+}
+
+
+function parseResponse(responseText) {
+    try {
+        // 將 responseText 解析為 JSON 對象
+        var responseObject = JSON.parse(responseText);
+        
+        // 獲取 JSON 中的 text 字段
+        var encodedText = responseObject.text || "";
+        
+        // 解碼 HTML 實體
+        var decodedText = encodedText.replace(/\\u([\dA-F]{4})/gi, function(match, grp) {
+            return String.fromCharCode(parseInt(grp, 16));
+        });
+
+        return decodedText;
+    } catch (error) {
+        console.error("解析 JSON 或解碼文本時發生錯誤: ", error);
+        return "無法提取文字";
+    }
+}
+
+
+
+function parseResponse2(responseText) {
+    var brSplit = responseText.split("<BR>");
+    if (brSplit.length >= 3) {
+        var result = brSplit[2].trim();
+        result = result.replace(/<[^>]*>/g, "");  // 移除所有 HTML 標籤
+        return result ? result : "";  // 返回處理後的結果
+    }
+    return "無法提取文字";
+}
+
+function toggleMicStatus(isRecording) {
+    var micIcon = document.getElementById("mic_status");
+    var micButton = document.querySelector("button.btn-info"); // 錄音按鈕
+
+    if (isRecording) {
+        micIcon.classList.remove("fa-microphone");
+        micIcon.classList.add("fa-microphone-slash");
+        micButton.disabled = true; // 禁用按鈕
+        micButton.title = "辨識中...";
+    } else {
+        micIcon.classList.remove("fa-microphone-slash");
+        micIcon.classList.add("fa-microphone");
+        micButton.disabled = false; // 解鎖按鈕
+        micButton.title = "語音辨識";
+    }
+}
+
+function clearTimers() {
+    clearTimeout(silenceTimer);
+    clearTimeout(maxRecordingTimer);
+    silenceStartTime = null; // 重置無聲開始時間
+}
+
+</script>
+<style>
+#modal-allLayer .modal-body,
+#modal-mylayer .modal-body,
+#modal-layer .modal-body {
+    max-height: 70vh; /* 設定最大高度為視窗高度的 90% */
+    overflow-y: auto; /* 啟用垂直滾動 */
+}
+</style>
+	
+
+
+<div class="modal fade" id="modal-confirm" tabindex="-1" role="dialog" aria-labelledby="modal-confirm-label" aria-hidden="true">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-green">
+				<button type="button" class="close modal-header-close" data-dismiss="modal" aria-label="關閉">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal-confirm-label">系統提示</h4>
+			</div>
+			<div class="modal-body" id="modal-confirm-body"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-default" id="modal-confirm-confirm">確定</button>
+				<input type="hidden" id="modal-confirm-result" value="false"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="ol-popup" id="qt-popup">
+	<div class="popup-body" id="qt-popup-body"></div>
+	<div class="popup-close">
+		<a href="javascript:void(0);" id="qt-popup-close"
+					aria-label="關閉資訊視窗" title="關閉資訊視窗"><span aria-hidden="true">&times;</span></a>
+	</div>
+</div>
+
+<script>
+$(function() {
+	// 關閉資訊視窗
+	$("#qt-popup-close").on("click", function(event) {
+		event.preventDefault();
+		qtPopupHide();
+		this.blur();
+	});
+});
+</script>
+
+	
+
+	
+	<div id="qt-temp" style="display: none;"></div>
+
+	<input type="hidden" name="land_layer" id="land_layer" value="N">
+	<input type="hidden" name="land_color" id="land_color" value="#F70101">
+	
+	
+	
+	
+<script>
+"use strict";
+$(function() {
+	var postzoom = "";
+	var postlon = "";
+	var postlat = "";
+	var baselayer = "";
+	var overlay = "";
+	var v_county = "";
+	var v_parno = "";
+	var v_hidetool = "N";
+	var info = "";
+
+	initDatabase();
+
+	language = "ZH-TW";
+	deviceType = "desktop";
+
+	initViewSize();
+	initMap("map1", postzoom, postlon, postlat);
+	initMap2("map2");
+	chg2Map();
+	
+	$(window).on("resize", _.throttle(function() {
+		chgViewSize();
+	}, 500));
+
+	if (info != "") {
+		$("#modal-system-info").modal("hide");
+	} else {
+		$("#modal-system-info").modal("show");
+	}
+		
+	setTimeout(function () {
+		
+		
+			indexDbLayer("mapstable", "002", baselayer || "EMAP", overlay);
+		
+	}, 700);
+		
+	setTimeout(function () {
+		if (postzoom >= 20 || postzoom == 0) {
+			postzoom = "19";
+		}
+	}, 600);
+
+	if (language.indexOf("ZH") > -1) {	
+		if (postzoom == "" || postlat == "" || postlon == "") {
+			setGeolocation();
+		} else {
+			setTimeout(function () {
+				var posxy = ol.proj.transform([postlon, postlat], toProjection, fromProjection); 
+				if (posxy[0].toFixed(0) < 1) {
+					posxy = ol.proj.transform([postlon, postlat], toProjection, toProjection); 
+				}
+				fly2Pos(posvectors, "coord", posxy[0], posxy[1], checkTypePng("coord"), {
+					"label" : "我的位置",
+					"visible" : true,
+					"center" : false,
+					"clean" : true,
+					"cookie" : false
+				});
+			}, 600);
+		}
+	}
+
+	if (v_county != "" && v_parno != "") {
+		setTimeout(function () {
+			catchLandQry(v_county, v_parno);
+		}, 600);
+	}
+
+	if (v_hidetool == "Y") {
+		$(".ol-button").hide();
+		$(".form-group").hide();
+	}
+
+	/* === 新增：地圖 UI 長按 / 拖曳 / callout 防護 === */
+	if (deviceType === "mobile") {
+		installMapUiTouchGuard();
+	}
+});
+</script>
+
+
+<script>
+if ("serviceWorker" in navigator) {
+	navigator.serviceWorker.register("service-worker.js")
+		.then(function() {
+			console.log("Service worker installed");
+		})
+		.catch(function(err) {
+			console.log("Error", err);
+		});
+}
+
+window.addEventListener("load", function() {
+	function handleNetworkChange(event) {
+		console.log("network change:" + navigator.onLine);
+		if (navigator.onLine) {
+			document.body.classList.remove("offline");
+		} else {
+			document.body.classList.add("offline");    
+		}
+	}
+	window.addEventListener("online", handleNetworkChange);
+	window.addEventListener("offline", handleNetworkChange);
+});
+
+if (navigator.onLine) {
+	document.body.classList.remove("offline");
+} else {
+	document.body.classList.add("offline");    
+}
+</script>
+
+<script>
+/* === 最終整理版：地圖 UI touch guard（採非 editable 一律限制） === */
+(function() {
+	"use strict";
+
+	var mapUiTouchGuardInstalled = false;
+
+	function isEditableTarget(target) {
+		return $(target).closest("input, textarea, select, [contenteditable='true'], [contenteditable='']").length > 0;
+	}
+
+	function getActiveEditable() {
+		var active = document.activeElement;
+		if (!active) {
+			return null;
+		}
+		return isEditableTarget(active) ? active : null;
+	}
+
+	function isMapAreaTarget(target) {
+		return $(target).closest(
+			"#map1, " +
+			"#map2, " +
+			".ol-viewport, " +
+			".ol-control, " +
+			".ol-overlaycontainer, " +
+			".ol-overlaycontainer-stopevent"
+		).length > 0;
+	}
+
+	function setMapInteractionsActive(active) {
+		try {
+			if (window.map && typeof window.map.getInteractions === "function") {
+				window.map.getInteractions().forEach(function(interaction) {
+					if (interaction && typeof interaction.setActive === "function") {
+						interaction.setActive(active);
+					}
+				});
+			}
+		} catch (e) {
+			console.warn("setMapInteractionsActive(map) error:", e);
+		}
+
+		try {
+			if (window.map2 && typeof window.map2.getInteractions === "function") {
+				window.map2.getInteractions().forEach(function(interaction) {
+					if (interaction && typeof interaction.setActive === "function") {
+						interaction.setActive(active);
+					}
+				});
+			}
+		} catch (e2) {
+			console.warn("setMapInteractionsActive(map2) error:", e2);
+		}
+	}
+
+	function shouldBlockBrowserGesture(e) {
+		var activeEditable = getActiveEditable();
+
+		/* 只要目前正在編輯 input，多指手勢全部擋 */
+		if (activeEditable) {
+			return true;
+		}
+
+		/* 非 editable 區域，多指手勢全部擋 */
+		if (!isEditableTarget(e.target)) {
+			return true;
+		}
+
+		return false;
+	}
+
+	window.installMapUiTouchGuard = function() {
+		if (mapUiTouchGuardInstalled) {
+			return;
+		}
+		mapUiTouchGuardInstalled = true;
+
+		/* 全站圖片不給原生拖曳 */
+		$("img").attr("draggable", "false");
+
+		/* 功能選單不要出現長按選單 / 選字 / 拖曳 */
+		$(document).on("contextmenu", ".menu1-open-button, .menu1-open-button *", function(e) {
+			e.preventDefault();
+		});
+
+		$(document).on("selectstart", ".menu1-open-button, .menu1-open-button *", function(e) {
+			e.preventDefault();
+		});
+
+		$(document).on("dragstart", ".menu1-open-button, .menu1-open-button *", function(e) {
+			e.preventDefault();
+		});
+
+		/* 搜尋框 focus 時暫停地圖互動；blur 後恢復 */
+		$(document).on("focus", "#qt-topMenu-lucene", function() {
+			setMapInteractionsActive(false);
+		});
+
+		$(document).on("blur", "#qt-topMenu-lucene", function() {
+			setMapInteractionsActive(true);
+		});
+
+		/* 單指碰到地圖時，如果目前在編輯 input，先收掉焦點 */
+		document.addEventListener("touchstart", function(e) {
+			if (!e.touches || e.touches.length !== 1) {
+				return;
+			}
+
+			if (isMapAreaTarget(e.target)) {
+				var activeEditable = getActiveEditable();
+				if (activeEditable) {
+					activeEditable.blur();
+				}
+			}
+		}, { passive: true });
+
+		/* 多指手勢：除了 editable 區，全部不讓瀏覽器接手 */
+		document.addEventListener("touchstart", function(e) {
+			if (!e.touches || e.touches.length < 2) {
+				return;
+			}
+			if (shouldBlockBrowserGesture(e)) {
+				e.preventDefault();
+			}
+		}, { passive: false });
+
+		document.addEventListener("touchmove", function(e) {
+			if (!e.touches || e.touches.length < 2) {
+				return;
+			}
+			if (shouldBlockBrowserGesture(e)) {
+				e.preventDefault();
+			}
+		}, { passive: false });
+
+		document.addEventListener("gesturestart", function(e) {
+			if (shouldBlockBrowserGesture(e)) {
+				e.preventDefault();
+			}
+		}, { passive: false });
+
+		document.addEventListener("gesturechange", function(e) {
+			if (shouldBlockBrowserGesture(e)) {
+				e.preventDefault();
+			}
+		}, { passive: false });
+
+		document.addEventListener("gestureend", function(e) {
+			if (shouldBlockBrowserGesture(e)) {
+				e.preventDefault();
+			}
+		}, { passive: false });
+	};
+})();
+</script>
+
+</body>
